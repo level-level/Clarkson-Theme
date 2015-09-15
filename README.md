@@ -1,5 +1,7 @@
 # Clarkson
 
+Clarkson Theme is a modern set of tools to take WordPress theme developement back to 21st century without loosing touch with WordPress because to do still love WordPress!
+
 ## Requirements
 
 | Prerequisite    | How to check | How to install
@@ -12,17 +14,14 @@
 
 ## Whats does What?
 
+Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+
 * [gulp](http://gulpjs.com/) build script that compiles both ~~Sass and~~ Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files to `dist` directory
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
 * No Framework, roll your own!
 * [Twig Templating cia Clarkson Core](http://twig.sensiolabs.org/)
-
-## Theme Development
-
-Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
-
 
 ## Installation
 
