@@ -41,6 +41,8 @@ From the command line:
 
 You now have all the necessary dependencies to run the build process.
 
+## Usage
+
 ### Available gulp commands
 
 * `gulp` — Compile and optimize the files in your assets directory
