@@ -1,6 +1,6 @@
 # Clarkson
 
-Clarkson Theme is a modern set of tools to take WordPress theme developement back to 21st century without loosing touch with WordPress because to do still love WordPress!
+Clarkson Theme is a modern set of tools to take WordPress theme developement back to 21st century without loosing touch with WordPress.
 
 ## Requirements
 
