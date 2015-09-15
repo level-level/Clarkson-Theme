@@ -5,8 +5,8 @@ function clarkson_add_editor_style(){
 }
 
 function clarkson_add_assets(){
-	wp_enqueue_style('yalla_main', get_template_directory_uri() . '/dist/styles/main.css', array(), '1.0.0', false );
-	wp_enqueue_script('yalla_main', get_template_directory_uri() . '/dist/scripts/main.js', array(), '1.0.0', true);
+	wp_enqueue_style('clarkson_main', get_template_directory_uri() . '/dist/styles/main.css', array(), '1.0.0', false );
+	wp_enqueue_script('clarkson_main', get_template_directory_uri() . '/dist/scripts/main.js', array(), '1.0.0', true);
 }
 
 add_action( 'admin_init', 		  'clarkson_add_editor_style', 100 );
