@@ -192,6 +192,7 @@ gulp.task('fonts', function() {
     sources.push( globs.fonts[i] + '.svg');
     sources.push( globs.fonts[i] + '.ttf');
     sources.push( globs.fonts[i] + '.woff');
+    sources.push( globs.fonts[i] + '.woff2');
   }
 
   return gulp.src(sources)
