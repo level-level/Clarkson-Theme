@@ -1,6 +1,10 @@
 <article {{ post_class( 'teaser', object.get_ID() ) }}>
     <header>
-        <h2 class="entry-title">{{ object.get_title() }}</h2>
+        <h2 class="entry-title">
+            <a href="{{ object.get_permalink() }}">
+                {{ object.get_title() }}
+            </a>
+        </h2>
     </header>
     <div class="entry-summary">
         {{ object.get_excerpt() | raw }}
