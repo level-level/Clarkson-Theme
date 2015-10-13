@@ -1,9 +1,17 @@
-<article class="object object-{{object.type}}">
+<article {{ post_class() }}>
 	{% if object.data is empty %}
-		<h1>Sorry</h1>
-		<p>This object has no data</p>
+		<header>
+			<h1 class="entry-title">Sorry</h1>
+		</header>
+		<div class="entry-content">
+			<p>This object has no data</p>
+		</div>
 	{% else %}
-		<h1>{{ object.data.title }}</h1>
-		{{ object.data.content | raw }}
+		<header>
+			<h1 class="entry-title">{{ object.data.title }}</h1>
+		</header>
+		<div class="entry-content">
+			{{ object.data.content | raw }}
+		</div>
 	{% endif %}
 </article>
