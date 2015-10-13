@@ -1,4 +1,4 @@
-<article {{ post_class() }}>
+<article {{ post_class( object.get_ID() ) }}>
 	{% if object.data is empty %}
 		<header>
 			<h1 class="entry-title">Sorry</h1>
