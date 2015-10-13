@@ -3,7 +3,7 @@
     <a class="brand" href="{{ esc_url(home_url('/'))  }}">{{  get_bloginfo('name')  }}</a>
     {% if true == is_front_page() %}</h1>{% endif %}
 
-    <nav role="navigation">
+    <nav class="nav primary-nav">
         {% if (has_nav_menu('primary-navigation'))  %}
             {{ wp_nav_menu( {'theme_location': 'primary-navigation', 'menu_class': 'menu primary-menu'} ) }}
         {% endif %}
