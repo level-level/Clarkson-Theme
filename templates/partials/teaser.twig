@@ -1,6 +1,6 @@
 <article {{ post_class( 'teaser', object.get_ID() ) }}>
     <header>
-        <h2 class="entry-title">{{ object.data.title }}</h2>
+        <h2 class="entry-title">{{ object.get_title() }}</h2>
     </header>
     <div class="entry-summary">
         {{ object.get_excerpt() | raw }}

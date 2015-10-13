@@ -8,10 +8,10 @@
 		</div>
 	{% else %}
 		<header>
-			<h1 class="entry-title">{{ object.data.title }}</h1>
+			<h1 class="entry-title">{{ object.get_title() }}</h1>
 		</header>
 		<div class="entry-content">
-			{{ object.data.content | raw }}
+			{{ object.get_content() | raw }}
 		</div>
 	{% endif %}
 </article>
