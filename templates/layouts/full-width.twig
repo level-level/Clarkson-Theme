@@ -1,0 +1,11 @@
+{% include 'defaults/head.twig' %}
+
+{% if objects is empty %}
+    {% include 'partials/empty.twig' %}
+{% else %}
+    {% for object in objects %}
+        {% include 'partials/teaser.twig' %}
+    {% endfor %}
+{% endif %}
+
+{% include 'defaults/footer.twig' %}
