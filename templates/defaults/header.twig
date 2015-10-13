@@ -1,18 +1,8 @@
-<!doctype html>
-<html class="no-js" {{ language_attributes() }}>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ wp_title('|', true, 'right') }}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<header class="banner" role="banner">
+    {% if true == is_front_page() %}<h1>{% endif %}
+    <a class="brand" href="{{ esc_url(home_url('/'))  }}">{{  get_bloginfo('name')  }}</a>
+    {% if true == is_front_page() %}</h1>{% endif %}
 
-        {{ wp_head() }}
-    </head>
-    <body {{ body_class() }}>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <nav role="navigation">
         {% if (has_nav_menu('primary-navigation'))  %}
             {{ wp_nav_menu( {'theme_location': 'primary-navigation', 'menu_class': 'menu primary-menu'} ) }}
