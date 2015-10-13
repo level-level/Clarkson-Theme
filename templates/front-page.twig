@@ -1,0 +1,7 @@
+{% extends "layouts/full-width.twig" %}
+
+{% block content %}
+    {% for object in objects %}
+        {% include 'partials/teaser.twig' %}
+    {% endfor %}
+{% endblock %}
