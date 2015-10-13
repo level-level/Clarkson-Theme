@@ -1,3 +1,5 @@
+{%  set object = objects|first %}
+
 <article {{ post_class( object.get_ID() ) }}>
 	{% if object.data is empty %}
 		<header>
