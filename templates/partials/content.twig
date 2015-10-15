@@ -1,7 +1,7 @@
 {%  set object = objects|first %}
 
 <article {{ post_class( object.get_ID() ) }}>
-	{% if object.data is empty %}
+	{% if object is empty %}
 		<header>
 			<h1 class="entry-title">Sorry</h1>
 		</header>
