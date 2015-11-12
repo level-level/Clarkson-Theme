@@ -1,7 +1,7 @@
 function options () {
     var parts = window.location.pathname.split( '/' );
-    if (parts[0] !== undefined && parts[0] != "") {
-        var type = parts[1];
+    var type = parts[1];
+    if (type !== undefined && type != "") {
         /*
          Navigation bar highlighting
          */

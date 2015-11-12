@@ -6,7 +6,7 @@ layout: default
         <ul class="collection docs">
             {% for item in site.data.docs[page.type] %}
             <li>
-                <a href="{{baseurl}}/{{page.type}}/docs/{{item.docname}}.html" class="collection-item">
+                <a href="{{site.baseurl}}/{{page.type}}/docs/{{item.docname}}.html" class="collection-item">
                     {{item.title}}
                 </a>
 
