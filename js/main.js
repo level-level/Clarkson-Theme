@@ -1,6 +1,47 @@
+function options () {
+    var parts = window.location.pathname.split( '/' );
+    if (parts[0] !== undefined && parts[0] != "") {
+        var type = parts[1];
+        /*
+         Navigation bar highlighting
+         */
+        var currentPage = parts[2];
+
+        $(".j-nav li a").each(function() {
+            var $a = $(this).attr("href").split('/')[2];
+            if ($a == currentPage) {
+                $(this).parent().addClass("active");
+            }
+        });
+
+        /*
+         Documentation page highlighting
+         */
+        // First, check if we're on the right page
+        if ($("#docs").length) {
+            var currentDocPage = parts[3];
+            $(".docs li a").each(function(key) {
+                var $docPage = $(this).attr("href").split('/')[3];
+                if ($docPage == currentDocPage
+                    || currentDocPage == "" && key == 0
+                    || currentDocPage === undefined && key == 0) {
+                    $(this).addClass("active " + type +"-text");
+                }
+            });
+        }
+
+        /*
+         Activate sideNav for mobile
+         */
+        $(".drag-target").remove();
+        $('.button-collapse').sideNav({
+            closeOnClick: true
+        });
+    }
+}
 (function($) {
     'use strict';
-
+    options();
     var $body = $('html, body'),
         content = $('#main').smoothState({
             prefetch: true,
@@ -71,7 +112,7 @@
                     $body.css('cursor', 'auto');
                     $body.find('a').css('cursor', 'auto');
                     $container.html($content);
-                    if (options()) {}
+                    options();
                 }
             }
 
