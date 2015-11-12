@@ -1,0 +1,99 @@
+/*
+    DOCUMENTATION
+*/
+.doc-pagination {
+  div {
+    i.material-icons {
+      vertical-align: middle;
+    }
+  }
+}
+
+/*
+    GENERAL
+*/
+pre {
+  padding: 1rem;
+  background: #272822;
+  word-wrap: normal;
+  word-break: normal;
+  border-radius: 5px;
+
+  code {
+    background-color: #272822;
+    color: white;
+  }
+
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  padding: 2px;
+  background: #CCCCCC;
+  border-radius: 3px;
+}
+
+/*
+    HOME
+*/
+.no-border {
+  border: none;
+}
+
+.collection-item {
+  &.no-border {
+    border: none;
+  }
+}
+
+.collection.docs {
+  .collection-item {
+    color: $off-black;
+    font-weight: 500;
+
+    &.active {
+      background-color: #ddd;
+    }
+  }
+}
+
+.features-header {
+  margin-left: 70px;
+}
+
+/*
+    MEDIA EXCEPTIONS
+*/
+@media #{$medium-and-up} {
+  .collection.docs {
+    margin-top: 95px;
+  }
+
+  .content-view {
+    margin-top: 100px;
+  }
+
+  .content-text {
+    font-size: 18px;
+    line-height: 1.618;
+  }
+}
+
+.core-accent {
+  a {
+    color: color("core", "base");
+  }
+}
+
+.theme-accent {
+  a {
+    color: color("theme", "base");
+  }
+}
+
+@media #{$small-and-down} {
+  #docs {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

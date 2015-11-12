@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="row scene_element exit-fadeout enter-fadein">
+    <div class="col s12 m8 l7 content-text">
+        {{content}}
+    </div>
+    <div class="col s12 m4 l4 offset-l1">
+        <h2 class="features-header">Features</h2>
+        <ul class="collection no-border">
+            {% for feature in page.features %}
+            <li class="collection-item avatar no-border">
+                <i class="material-icons circle {{page.type}}">{{feature.icon}}</i>
+                <span class="title">{{feature.title}}</span>
+                <p>{{feature.subtext}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

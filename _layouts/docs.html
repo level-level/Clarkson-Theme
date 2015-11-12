@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row" id="docs">
+    <div class="col s12 m3">
+        <ul class="collection docs">
+            {% for item in site.data.docs[page.type] %}
+            <li>
+                <a href="{{baseurl}}/{{page.type}}/docs/{{item.docname}}.html" class="collection-item">
+                    {{item.title}}
+                </a>
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col s12 m8 offset-m1 content-text scene_element exit-fadeout enter-fadein">
+        {{content}}
+    </div>
+</div>

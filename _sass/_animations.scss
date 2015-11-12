@@ -1,0 +1,128 @@
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.scene_element {
+  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+
+  .reverse {
+    animation-direction: alternate-reverse;
+    -webkit-animation-direction: alternate-reverse;
+  }
+}
+
+/*
+    Animations that run when entering the page
+*/
+:not(.is-exiting) {
+  .enter-fadein {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+  }
+
+  .hide-overlay {
+    animation-name: hideOverlay;
+    -webkit-animation-name: hideOverlay;
+  }
+}
+
+/*
+    Animations that run when leaving the page
+*/
+.is-exiting {
+  .half-to-full-cover {
+    animation-name: fullCover;
+    -webkit-animation-name: fullCover;
+  }
+
+  .half-to-min-cover {
+    animation-name: minCover;
+    -webkit-animation-name: minCover;
+  }
+
+  .min-to-half-cover {
+    animation-name: halfCover;
+    -webkit-animation-name: halfCover;
+  }
+
+  .full-to-half-cover {
+    animation-name: fullCoverReverse;
+    -webkit-animation-name: fullCoverReverse;
+  }
+
+  .exit-fadeout {
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+  }
+}
+
+@media #{$medium-and-up} {
+  @include keyframes(fullCover) {
+    from {  width: 50%; opacity: 1; }
+    to {  width: 97%; opacity: 0; }
+  }
+}
+
+@media #{$small-and-down} {
+  @include keyframes(fullCover) {
+    from {  height: 50%; opacity: 1; }
+    to {  height: 100%; opacity: 0; }
+  }
+}
+
+@media #{$medium-and-up} {
+  @include keyframes(minCover) {
+    from {  width: 50%;  }
+    to {  width: 3%;  }
+  }
+}
+
+@media #{$small-and-down} {
+  @include keyframes(minCover) {
+    from {  height: 50%;  }
+    to {  height: 0;  }
+  }
+}
+
+@media #{$medium-and-up} {
+  @include keyframes(halfCover) {
+    from {  width: 3%;  }
+    to {  width: 50%;  }
+  }
+}
+
+@media #{$small-and-down} {
+  @include keyframes(halfCover) {
+    from {  height: 0;  }
+    to {  height: 50%;  }
+  }
+}
+
+@media #{$medium-and-up} {
+  @include keyframes(fullCoverReverse) {
+    from {  width: 97%;  opacity: 0; z-index: 2; }
+    to {  width: 50%; opacity: 1; z-index: 2; }
+  }
+}
+
+@media #{$small-and-down} {
+  @include keyframes(fullCoverReverse) {
+    from {  height: 100%;  opacity: 0; z-index: 2; }
+    to {  height: 50%; opacity: 1; z-index: 2; }
+  }
+}
+
+@include keyframes(fadeIn) {
+  from {  opacity: 0;  }
+  to {  opacity: 1;  }
+}
+
+@include keyframes(fadeOut) {
+  from {  opacity: 1;  }
+  to {  opacity: 0;  }
+}
