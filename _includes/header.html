@@ -17,11 +17,11 @@
         <ul class="side-nav hide-on-med-and-up j-nav" id="mobile-nav">
             <li class="icon-{{page.type}}-icon sidenav-icon {{page.type}}-text"></li>
             <li class="clarkson-title">
-                <span class="{{page.type}}-text">{{page.title}}</span>
+                <span class="{{page.type}}-text">{{site.global.pagetitle[page.type]}}</span>
             </li>
             <li><a href="{{site.baseurl}}/{{page.type}}/">Home</a></li>
             <li><a href="{{site.baseurl}}/{{page.type}}/docs">Documentation</a></li>
-            <li><a href="{{site.global.github_[page.type]}}">GitHub</a></li>
+            <li><a href="{{site.global.github[page.type]}}">GitHub</a></li>
             <li><a href="{{site.baseurl}}/{{page.type}}/support">Support</a></li>
         </ul>
     </div>
