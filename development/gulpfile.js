@@ -229,7 +229,7 @@ gulp.task('jshint', function() {
 // `gulp clean` - Deletes the build folder entirely.
 gulp.task('clean', function(){
 	var del = require('del');
-	
+
 	del([path.dist], {force:true}, function (err, paths) {
 	});
 });
@@ -241,7 +241,7 @@ gulp.task('clean', function(){
 // build step for that asset and inject the changes into the page.
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
-  
+
   browserSync.init({
     files: ['../**/*.php', '../*.php', '../templates/**/*.twig', '../templates/*.twig'],
     proxy: config.browsersyncUrl,
