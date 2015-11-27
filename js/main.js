@@ -45,7 +45,7 @@ function options () {
     var $body = $('html, body'),
         content = $('#main').smoothState({
             prefetch: true,
-            pageCacheSize: 0,
+            pageCacheSize: 4,
             development: true,
             // Runs when a link has been clicked
             onClick: function(event){

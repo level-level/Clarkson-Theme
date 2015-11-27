@@ -1,3 +1,5 @@
+- docname: index
+  title: Documentation
 - docname: installation
   title: Installation
 - docname: configuration

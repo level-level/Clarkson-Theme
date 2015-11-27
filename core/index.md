@@ -17,8 +17,8 @@ Dit is wat tekst
 
 ## dit is een h2
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
+{% highlight php %}
+<?php
+$test = "This is some highlighted PHP code";
+echo $test;
 {% endhighlight %}
