@@ -8,17 +8,9 @@ features:
     - title: Runs on Twig
       subtext: Cleaner code and a better workflow
       icon: code
-    - title: Uses Bower
-      subtext: Easy installation of new packages
+    - title: Easy installation
+      subtext: Only requires Composer
       icon: track_changes
 ---
-# hallo
-Dit is wat tekst
-
-## dit is een h2
-
-{% highlight php %}
-<?php
-$test = "This is some highlighted PHP code";
-echo $test;
-{% endhighlight %}
+# Clarkson Core
+A plugin to write Object-Oriented code in combination with the Twig templating enging while keeping the WordPress Way of working in mind.

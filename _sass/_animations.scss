@@ -20,11 +20,6 @@
     Animations that run when entering the page
 */
 :not(.is-exiting) {
-  .enter-fadein {
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-  }
-
   .hide-overlay {
     animation-name: hideOverlay;
     -webkit-animation-name: hideOverlay;
@@ -53,11 +48,6 @@
   .full-to-half-cover {
     animation-name: fullCoverReverse;
     -webkit-animation-name: fullCoverReverse;
-  }
-
-  .exit-fadeout {
-    animation-name: fadeOut;
-    -webkit-animation-name: fadeOut;
   }
 }
 
@@ -115,14 +105,4 @@
     from {  height: 100%;  opacity: 0; z-index: 2; }
     to {  height: 50%; opacity: 1; z-index: 2; }
   }
-}
-
-@include keyframes(fadeIn) {
-  from {  opacity: 0;  }
-  to {  opacity: 1;  }
-}
-
-@include keyframes(fadeOut) {
-  from {  opacity: 1;  }
-  to {  opacity: 0;  }
 }

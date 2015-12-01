@@ -1,4 +1,5 @@
 function options () {
+    $(".drag-target").remove();
     var parts = window.location.pathname.split( '/' );
     var type = parts[1];
     if (type !== undefined && type != "") {
@@ -33,7 +34,6 @@ function options () {
         /*
          Activate sideNav for mobile
          */
-        $(".drag-target").remove();
         $('.button-collapse').sideNav({
             closeOnClick: true
         });

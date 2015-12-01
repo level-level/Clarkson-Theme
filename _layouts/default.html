@@ -2,11 +2,11 @@
 <html>
 {% include head.html %}
 <body>
-<div id="main" class="m-scene">
+<div id="main">
     <div class="clarkson-content">
         {% include header.html %}
         <div class="row content-view">
-            <div class="col s12 m10 l8 offset-m1 offset-l2">
+            <div class="col s12 m10 l8 offset-m1 offset-l2 {{page.type}}-accent">
                 {{content}}
             </div>
         </div>
@@ -23,9 +23,6 @@
     <a href="{{site.baseurl}}/" class="scene_element cover clarkson-core-cover core full" data-pt="core-cover-min"></a>
     {% endif %}
 </div>
-<script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/materialize.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/smoothstate.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/main.js"></script>
+{% include scripts.html %}
 </body>
 </html>
