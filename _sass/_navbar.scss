@@ -152,10 +152,6 @@ nav {
   position: relative;
   height: $navbar-height-mobile;
   z-index: 998;
-
-  nav {
-    position: fixed;
-  }
 }
 @media #{$medium-and-up} {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
