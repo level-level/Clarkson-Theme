@@ -13,12 +13,12 @@ features:
       subtext: Keeping multiple browsers and devices synchronized, along with injecting updated CSS and JS in your browser.
       icon: loop
     - title: Bower
-      subtext: Front-end package management
+      subtext: Front-end package management that just installs the right versions of the packages you need and their dependencies.
       icon: code
     - title: asset-builder
       subtext: For the JSON file based asset pipeline
       icon: code
-    - title: No framework
+    - title: No CSS framework
       subtext: Roll your own!
       icon: thumb_up
     - title: Runs on Clarkson Core
