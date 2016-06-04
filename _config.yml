@@ -7,6 +7,9 @@ url: "http://level-level.github.io" # the base hostname & protocol for your site
 twitter_username: levellevel
 github_username:  level-level
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 
