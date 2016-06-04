@@ -26,5 +26,5 @@ features:
       icon: code
       
 ---
-# Clarkson Theme
-Clarkson Theme is a modern set of tools to take WordPress theme development back to 21st century without losing touch with WordPress.
+# Clarkson Theme is a modern set of tools to take WordPress theme development back to 21st century without losing touch with WordPress.
+{: .hero-header}
