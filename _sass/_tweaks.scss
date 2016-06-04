@@ -33,6 +33,11 @@ code {
   border-radius: 3px;
 }
 
+.hero-header {
+  text-align: center;
+  margin-bottom: ($h1-fontsize);
+}
+
 /*
     HOME
 */
@@ -58,7 +63,11 @@ code {
 }
 
 .features-header {
-  margin-left: 70px;
+  text-align: center;
+}
+
+.features .feature {
+  margin-bottom: 1.5em;
 }
 
 /*

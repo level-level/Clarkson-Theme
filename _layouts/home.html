@@ -2,19 +2,18 @@
 layout: default
 ---
 <div class="row">
-    <div class="col s12 m8 l7 content-text flow-text">
+    <div class="col s12 m12 l12 content-text flow-text">
         {{content}}
     </div>
-    <div class="col s12 m4 l4 offset-l1">
-        <h2 class="features-header">Features</h2>
-        <ul class="collection no-border">
-            {% for feature in page.features %}
-            <li class="collection-item avatar no-border">
-                <i class="material-icons circle {{page.type}}">{{feature.icon}}</i>
-                <span class="title">{{feature.title}}</span>
-                <p>{{feature.subtext}}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+</div>
+<div class="row features">
+    <ul class="collection no-border">
+        {% for feature in page.features %}
+        <li class="collection-item avatar no-border col s12 m4 l4 feature">
+            <i class="material-icons circle {{page.type}}">{{feature.icon}}</i>
+            <span class="title">{{feature.title}}</span>
+            <p>{{feature.subtext}}</p>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
