@@ -21,7 +21,7 @@ Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](h
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
 * No Framework, roll your own!
-* [Twig Templating cia Clarkson Core](http://twig.sensiolabs.org/)
+* [Twig Templating via Clarkson Core](http://twig.sensiolabs.org/)
 
 ## Installation
 
