@@ -2,7 +2,9 @@
   title: Installation
 - docname: template-hierarchy
   title: Template Hierarchy
-- docname: custom-post-type
-  title: Custom Post Types
+- docname: wordpress-objects
+  title: WordPress objects
+- docname: custom-objects
+  title: Custom Objects
 - docname: adding-objects
-  title: Adding Objects
+  title: Adding objects
