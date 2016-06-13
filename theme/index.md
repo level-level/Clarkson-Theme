@@ -27,4 +27,4 @@ features:
       
 ---
 # Clarkson Theme is a modern set of tools to take WordPress theme development back to 21st century without losing touch with WordPress.
-{: .hero-header}
+{: .hero-header .flow-text}

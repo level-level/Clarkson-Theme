@@ -16,4 +16,4 @@ features:
       icon: track_changes
 ---
 # A plugin to write Object-Oriented code in combination with the Twig templating enging while keeping the WordPress Way of working in mind.
-{: .hero-header}
+{: .hero-header .flow-text }
