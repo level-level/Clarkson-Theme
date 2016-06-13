@@ -2,8 +2,8 @@
   title: Installation
 - docname: template-hierarchy
   title: Template Hierarchy
-- docname: wordpress-objects
-  title: WordPress objects
+- docname: wordpress-object
+  title: WordPress object
 - docname: custom-objects
   title: Custom Objects
 - docname: adding-objects
