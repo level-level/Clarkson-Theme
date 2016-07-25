@@ -13,7 +13,6 @@
         },
         "main.css": {
             "files": [
-                "..\/development\/bower_components\/normalize.css\/normalize.css",
                 "styles\/main.less"
             ],
             "main": true
