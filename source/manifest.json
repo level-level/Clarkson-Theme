@@ -1,29 +1,29 @@
 {
-    "version": "0.0.0",
+    "version": "0.1.0",
     "paths": {
-        "source": "..\/source\/",
-        "dist": "..\/dist\/"
+        "source": "../source/",
+        "dist": "../dist/"
     },
     "dependencies": {
         "main.js": {
             "files": [
-                "scripts\/main.js"
+                "scripts/main.js"
             ],
             "main": true
         },
         "main.css": {
             "files": [
-                "styles\/main.less"
+                "styles/main.less"
             ],
             "main": true
         },
         "editor-style.css": {
             "files": [
-                "styles\/editor.less"
+                "styles/editor.less"
             ]
         }
     },
     "config": {
-        "browsersyncUrl": "http:\/\/clarkson.dev"
+        "browsersyncUrl": "http://clarkson.dev"
     }
 }
