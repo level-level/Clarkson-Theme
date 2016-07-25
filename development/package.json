@@ -52,7 +52,6 @@
     "merge-stream": "^0.1.7",
     "minimist": "^1.1.1",
     "run-sequence": "^1.0.2",
-    "traverse": "^0.6.6",
-    "wiredep": "^2.2.2"
+    "traverse": "^0.6.6"
   }
 }
