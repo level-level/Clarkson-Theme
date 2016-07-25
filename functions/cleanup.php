@@ -26,7 +26,7 @@ function rw_title( $title, $sep, $seplocation = 'right' ) {
 
   // Add a page number if necessary:
   if ( $paged >= 2 || $page >= 2 ) {
-    $title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
+    $title .= " {$sep} " . sprintf( __( 'Page %s', 'clarkson' ), max( $paged, $page ) );
   }
   return $title;
 }
