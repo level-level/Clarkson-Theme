@@ -1,7 +1,8 @@
 {
   "name": "clarkson-theme",
-  "homepage": "https://level-level.com",
+  "homepage": "http://level-level.com",
   "authors": [
+    "Level Level",
     "Robin Aldenhoven <robin.aldenhoven@gmail.com>"
   ],
   "license": "MIT",
