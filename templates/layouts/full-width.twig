@@ -1,5 +1,6 @@
 {% include 'defaults/head.twig' %}
 
+<main class="main" id="main">
 {% block content %}
     {% if objects is empty %}
         {% include 'partials/empty.twig' %}
@@ -9,5 +10,6 @@
         {% endfor %}
     {% endif %}
 {% endblock %}
+</main>
 
 {% include 'defaults/footer.twig' %}
