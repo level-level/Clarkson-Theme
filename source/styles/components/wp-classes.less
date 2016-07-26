@@ -1,6 +1,43 @@
 // WordPress Generated Classes
 // http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 
+// Media alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+.aligncenter {
+  display: block;
+  margin: 0.5rem auto;
+  height: auto;
+}
+.alignleft,
+.alignright {
+  margin-bottom: (0.5rem / 2);
+  height: auto;
+}
+@media (min-width: @screen-sm-min) {
+  // Only float if not on an extra small device
+  .alignleft {
+    float: left;
+    margin-right: 1.5rem;
+  }
+  .alignright {
+    float: right;
+    margin-left: 1.5rem;
+  }
+}
+
+// Captions
+.wp-caption {
+
+}
+.wp-caption-text {
+  padding: 0.5rem;
+}
+
 // Text meant only for screen readers
 // Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
 .screen-reader-text {

@@ -1,0 +1,241 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+@black:                  #000;
+@white:                  #fff;
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link decoration.
+@link-decoration: underline;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-serif;
+@font-family-base-italic: @font-family-serif;
+
+@font-size-base:          15px;
+@font-size-small:         18px;
+@font-size-large:         20px;
+
+@font-size-h1:            30px;
+@font-size-h2:            24px;
+@font-size-h3:            20px;
+@font-size-h4:            20px;
+@font-size-h5:            20px;
+@font-size-h6:            20px;
+
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.618; // is golden ratio
+@line-height-large:       1.414; // Augmented fourth because the perfect fourth is 1.333333 and less closer to 1.45
+/**
+ * You would think that line-height-large would be a higher number, but with a larger font-number designers want
+ * a smaller line-height.
+ */
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:        floor((@font-size-base * @line-height-base));
+
+@headings-font-family:        @font-family-sans-serif;
+@headings-font-weight:        600;
+@headings-line-height:        1.1;
+@headings-color:              inherit;
+
+
+//== Type elements
+//
+//##
+
+//** Text muted color
+@text-muted:                  @gray-light;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-light;
+//** Headings small color
+@headings-small-color:        @gray-light;
+
+//** Blockquote
+@blockquote-color:            @gray-light;
+@blockquote-font-size:        (@font-size-base * 1.25);
+@blockquote-line-height:      @line-height-large;
+
+//** Horizontal line color.
+@hr-border:                   @gray-lighter;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                #f5f5f5;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #ddd;
+
+
+
+//== Form
+//
+//##
+@form-border-color:             #DCDCDC;
+@form-color:                    #3D3D3D;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+// Like load more
+@btn-default-color:              @white;
+@btn-default-bg:                 @brand-primary;
+@btn-default-border:             @brand-primary;
+
+// All the other form buttons
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             @brand-primary;
+
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-navbar:            1000;
+@zindex-logo:              1010;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small / phone
+// Mainly for overview grid and highlighted posts
+@screen-xs:                  640px;
+@screen-xs-min:              @screen-xs;
+
+
+// Small screen / tablet
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+
+// Medium screen / desktop
+@screen-md:                  1024px;
+@screen-md-min:              @screen-md;
+
+// Large screen / wide desktop
+@screen-lg:                  1262px; // = 1280px - extra pixels for IE
+@screen-lg-min:              @screen-lg;
+
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+//== Layout system
+//
+//## layout.less
+@container-padding:         20px;
+@container-padding-sm:      @grid-column-width + @grid-gutter-width/2;
+@container-padding-md:      45px;
+
+@container-lg:              @screen-lg - 20px;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+//@grid-columns:              12; useless here, because there is no proper grid
+@grid-column-width:         75px;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+
+//** Padding between blocks. Was 15px but is now 10px
+@grid-cell-width:           300px;
+@grid-cell-height:          250px;
+@grid-cell-gutter-width:    4px;
+@grid-cell-gutter-height:   @grid-cell-gutter-width * 2;
+
+
+
+//== Primary menu
+@nav-height:                40px;
+
+
+//== Site Logo
+//
+//## Site logo because SVG's as img need w/h attributes
+@logo-width:                50px;
+@logo-height:               50px;
+
+
+//== Code
+//
+//##
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@kbd-color:                   #fff;
+@kbd-bg:                      #333;
+
+@pre-bg:                      #f5f5f5;
+@pre-color:                   @gray-dark;
+@pre-border-color:            #ccc;
+@pre-scrollable-max-height:   340px;

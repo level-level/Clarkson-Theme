@@ -1,0 +1,23 @@
+/**
+ * Large - widescreen
+ */
+
+// To make the .wrap center but also the container within, for example the footer must be centered...
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: @container-lg; // minus the default whitespace left and right so it still gets centered via the margin auto
+}
+
+.wrap-single {
+  .container;
+}
+
+.wrap-2-columns {
+  .main-single {
+    width: @container-lg - 330px;
+  }
+  .sidebar {
+    width: 330px;
+  }
+}

@@ -1,0 +1,67 @@
+//
+// Detail page Layout
+// --------------------------------------------------
+
+// To make the .wrap center but also the container within, for example the footer must be centered...
+.container {
+  .clearfix;
+  //has a max-width with centering in large/_layout.less
+}
+
+.make-column(){
+  float: left;
+  min-height: 1px;
+  position: relative;
+}
+
+// Wrap
+.wrap {
+  margin-top: @nav-height; //max-height menu
+  .clearfix;
+}
+
+
+.wrap-main {
+  background: @white;
+}
+
+
+.wrap-single {
+  position: relative;
+  z-index: inherit;
+
+  // Default whitespace left and right
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+// on mobile ws, larger reset
+.wrap-full-width {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+// Main = overall
+.main {
+  clear: both;
+}
+
+// Main single = detail pages
+.main-single {
+
+}
+.sidebar {
+
+}
+
+.main-single,
+.sidebar {
+  padding-left: @container-padding;
+  padding-right: @container-padding;
+  clear: both;
+}
+
+.sidebar {
+  padding-top: @container-padding;
+}

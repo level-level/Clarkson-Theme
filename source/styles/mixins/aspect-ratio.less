@@ -1,0 +1,29 @@
+// Fill the parent element
+.fill(@spacing: 0) {
+  position: absolute;
+  top: @spacing; bottom: @spacing;
+  left: @spacing; right: @spacing;
+}
+
+.aspect-ratio(@w, @h, @spacing: 0) {
+  @ratio: (@h / @w);
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: (100% * @ratio);
+  }
+
+  > * {
+    .fill(@spacing);
+  }
+}
+
+.aspect-ratio-reset(){
+  &:before {
+    display: none;
+  }
+  > * {
+    position: relative;
+  }
+}
