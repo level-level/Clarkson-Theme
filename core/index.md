@@ -6,7 +6,7 @@ type: core
 
 features:
     - title: Runs on Twig
-      subtext: Cleaner code and a better workflow
+      subtext: Cleaner code and a better workflow which enables true Separation of Concerns
       icon: code
     - title: WordPress object
       subtext: Comes with Object Orientated classes for WordPress data types
