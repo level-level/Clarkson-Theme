@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 /*
     DOCUMENTATION
 */
@@ -12,6 +15,7 @@
 /*
     GENERAL
 */
+
 pre {
   padding: 1rem;
   background: #272822;
@@ -36,11 +40,32 @@ code {
 
 .hero-header {
   text-align: center;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: $h1-fontsize / 1.2;
+  color: #555;
+  margin-top: $h1-fontsize;
+  margin-bottom: $h1-fontsize;
+}
+
+.content-text {
+  ul {
+    padding-left: 1.5rem;
+  }
+  ul li {
+    list-style-type: disc;
+  }
 }
 
 /*
     HOME
 */
+// Pull the first item to the top of the parent container
+.home .content-text > *:first-child {
+  margin-top: 0;
+}
+
 .no-border {
   border: none;
 }
@@ -62,6 +87,21 @@ code {
   }
 }
 
+.menu-toc ul {
+  margin-top: 10px;
+}
+.menu-item {
+  line-height: 1.5rem;
+  padding: 10px 20px 10px 0;
+  margin: 0;
+  font-size: 1.2rem;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+// Features
 .features-header {
   text-align: center;
 }
@@ -90,13 +130,13 @@ code {
 
 .core-accent {
   a {
-    color: color("core", "base");
+    color: #2f89c6;
   }
 }
 
 .theme-accent {
   a {
-    color: color("theme", "base");
+    color: #2ab866;
   }
 }
 
