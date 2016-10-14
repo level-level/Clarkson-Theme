@@ -4,7 +4,7 @@ title: Clarkson Core
 pagetitle: Clarkson Core
 type: core
 
-hero-header: "A plugin to write Object-Oriented code in combination with the Twig templating enging while keeping the WordPress Way of working in mind."
+hero-header: "A plugin to write Object-Oriented code in combination with the Twig templating engine while keeping the WordPress Way of working in mind."
 
 ---
 
@@ -23,3 +23,6 @@ Contains default classes that for example represent `WP_Post`, `WP_Term` and `WP
 
 ## Why not plugin XYZ?
 The combination of loading the WordPress objects and removing the need of duplicating `.php` left use with building Clarkson.
+
+## Easy installation
+Can be installed via Composer

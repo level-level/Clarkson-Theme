@@ -117,4 +117,5 @@ function options () {
             }
 
         }).data('smoothState');
+    // js/main.js moet het in
 })(jQuery);
