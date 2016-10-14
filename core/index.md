@@ -4,16 +4,22 @@ title: Clarkson Core
 pagetitle: Clarkson Core
 type: core
 
-features:
-    - title: Runs on Twig
-      subtext: Cleaner code and a better workflow
-      icon: code
-    - title: WordPress object
-      subtext: Comes with Object Orientated classes for WordPress data types
-      icon: code
-    - title: Easy installation
-      subtext: Can be installed via Composer
-      icon: track_changes
+hero-header: "A plugin to write Object-Oriented code in combination with the Twig templating enging while keeping the WordPress Way of working in mind."
+
 ---
-# A plugin to write Object-Oriented code in combination with the Twig templating enging while keeping the WordPress Way of working in mind.
-{: .hero-header .flow-text }
+
+
+## What is Clarkson Core?
+Clarkson Core is an plugin that enables you to use the Twig templating engine inside your Theme and Plugins. It also delivers base classes for the WordPress data types which encourage you to write more Object-Orientated code. This results in cleaner code and a better workflow.
+
+## What is Twig and why we use it?
+
+Twig is a templating engine that makes it easier for both front-end and back-end developers to work on your project. It helps you separate logic from templates files and allows you to write modular, more efficient and easier to maintain code.
+Clarkson is build so that the default WordPress Theming hierarchy is respected.
+
+## Object Oriented WordPress Objects like Posts and Terms 
+
+Contains default classes that for example represent `WP_Post`, `WP_Term` and `WP_User` and can be extended to customize them for your own Custom Post Types, Taxonomies or Users.
+
+## Why not plugin XYZ?
+The combination of loading the WordPress objects and removing the need of duplicating `.php` left use with building Clarkson.
