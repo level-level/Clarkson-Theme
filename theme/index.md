@@ -19,6 +19,9 @@ We try to keep the theme folder as clean as possible by:
 - Keeping all of the template files in the `templates` directory.  
 - Ignoring the generated assets from Gulp thanks to a `dist` and `src` workflow via Gulp.  
 - Centralize all tooling code in one `development` folder.
+
+## Be free of CSS Frameworks
+We didn't want to include something like Bootstrap or another Framework.
  
 ## Gulp
 Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates and minifies files. *
@@ -31,9 +34,6 @@ Currently Roots already uses an `npm` only setup, but this is  up to you to swap
 
 ## Bower
 Front-end package management that just installs the right versions of the packages you need and their dependencies. *
-
-## Be free of CSS Frameworks
-We didn't want to include something like Bootstrap or another Framework.
 
 ## asset-builder *
 For the JSON file based asset pipeline.

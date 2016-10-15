@@ -113,9 +113,21 @@ function options () {
                     $body.find('a').css('cursor', 'auto');
                     $container.html($content);
                     options();
+                    init_toc();
                 }
             }
 
         }).data('smoothState');
-    // js/main.js moet het in
+    function init_toc(){
+        $('.toc').toc({
+            'selectors': 'h2', //elements to use as headings
+            'container': '.content-text', //element to find all selectors in
+            'smoothScrolling': true, //enable or disable smooth scrolling on click
+            'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+                return 'menu-item';
+            }
+        });
+    }
+
+    init_toc();
 })(jQuery);
