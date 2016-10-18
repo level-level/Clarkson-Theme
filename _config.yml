@@ -11,7 +11,11 @@ gems:
   - jekyll-sitemap
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
+
+exclude:
+  - README.md
 
 collections:
   theme:
