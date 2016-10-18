@@ -22,7 +22,9 @@ Clarkson is build so that the default WordPress Theming hierarchy is respected.
 Contains default classes that for example represent `WP_Post`, `WP_Term` and `WP_User` and can be extended to customize them for your own Custom Post Types, Taxonomies or Users.
 
 ## Why not plugin XYZ?
-The combination of loading the WordPress objects and removing the need of duplicating `.php` left use with building Clarkson.
+The combination of loading the WordPress objects and removing the need of duplicating `.php` left use with building Clarkson. We also wanted that all the post that were available in `The Loop` became one global variable which led us to the `objects` variable.
 
 ## Easy installation
-Can be installed via Composer
+
+
+Can be installed via [Composer](docs#composer) or a [zip download](docs#quick-download).

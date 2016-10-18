@@ -25,6 +25,13 @@ $on-laptop:        800px;
 $navbar-height: 71px;
 $navbar-height-mobile: 56px;
 
+$button-color: #fff;
+$button-color-raised: $background-color;
+$button-height: 2em;
+$button-font-size-shared: 0.8rem;
+$button-large-icon-font-size: 1.3rem;
+$button-line-height: 2em;
+
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -46,5 +53,6 @@ $navbar-height-mobile: 56px;
         "covers",
         "tweaks",
         "syntax-highlighting",
-        "animations"
+        "animations",
+        "buttons"
 ;

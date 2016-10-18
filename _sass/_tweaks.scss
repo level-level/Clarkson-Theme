@@ -152,7 +152,11 @@ h6:hover .header-link {
 .core-accent {
   a {
     color: #2f89c6;
+    //&.btn {
+    //  color: $button-color-raised;
+    //}
   }
+
 }
 
 .theme-accent {
