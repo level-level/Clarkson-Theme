@@ -15,7 +15,10 @@ highlighter: rouge
 markdown: kramdown
 
 exclude:
-  - README.md
+  - readme.md
+  - bin
+  - Gemfile
+  - Gemfile.lock
 
 collections:
   theme:
