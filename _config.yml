@@ -10,10 +10,6 @@ github_username:  level-level
 gems:
   - jekyll-sitemap
 
-# Build settings
-highlighter: rouge
-markdown: kramdown
-
 exclude:
   - readme.md
   - bin
