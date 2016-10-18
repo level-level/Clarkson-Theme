@@ -9,7 +9,7 @@ We suggest to put the plugin in your `mu-plugins` directory.
 There are 3 posiblities to install Clarkson Core and as with all Must Use plugins, you need to [load it manually *](#loading-clarkson-core-as-a-must-use-plugin).
 
 ## Quick download
-[Download](https://github.com/level-level/clarkson-theme/builds/zip/clarkson-core.zip) the `.zip` and place it within your `mu-plugins` directory.
+[Download](http://wp-clarkson.com/builds/zip/clarkson-core.zip) the `.zip` and place it within your `mu-plugins` directory.
 
 <!-- This package is build via "clarkson-theme/bin/build.sh" -->
 
