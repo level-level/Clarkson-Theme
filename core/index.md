@@ -27,4 +27,4 @@ The combination of loading the WordPress objects and removing the need of duplic
 ## Easy installation
 
 
-Can be installed via [Composer](docs#composer) or a [zip download](docs#quick-download).
+Can be installed via [Composer](/core/docs#composer) or a [zip download](/core/docs#quick-download).
