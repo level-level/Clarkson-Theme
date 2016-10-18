@@ -1,7 +1,7 @@
 - docname: index
   title: Installation
-- docname: template-hierarchy
-  title: Template Hierarchy
+- docname: templates
+  title: Templates
 - docname: wordpress-objects
   title: WordPress objects
 - docname: custom-objects
