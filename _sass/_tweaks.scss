@@ -87,6 +87,8 @@ code {
   }
 }
 
+
+// Table of Contents on Home
 .menu-toc ul {
   margin-top: 10px;
 }
@@ -101,13 +103,32 @@ code {
   }
 }
 
-// Features
+// Features deprecated
 .features-header {
   text-align: center;
 }
 
 .features .feature {
   margin-bottom: 1.5em;
+}
+
+// Anchor quick links behind headers
+.header-link {
+  position: absolute;
+  top: .15em;
+  margin-left: 0.5rem;
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
 }
 
 /*
