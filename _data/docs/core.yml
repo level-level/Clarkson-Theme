@@ -1,7 +1,7 @@
 - docname: index
   title: Installation
 - docname: templates
-  title: Templates
+  title: Twig Templates
 - docname: wordpress-objects
   title: WordPress objects
 - docname: custom-objects

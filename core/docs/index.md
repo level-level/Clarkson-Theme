@@ -8,17 +8,23 @@ We suggest to put the plugin in your `mu-plugins` directory.
 
 There are 3 posiblities to install Clarkson Core and as with all Must Use plugins, you need to [load it manually *](#loading-clarkson-core-as-a-must-use-plugin).
 
+* [Quick download](#quick-download)
+* [Git clone](#git-clone)
+* [Composer](#composer)
+
+> Remember you still need to [load Clarkson](#loading-clarkson-core-as-a-must-use-plugin) by yourself.
+
 ## Quick download
 [Download](http://wp-clarkson.com/builds/zip/clarkson-core.zip) the `.zip` and place it within your `mu-plugins` directory.
 
 <!-- This package is build via "clarkson-theme/bin/build.sh" -->
 
-## Manually git clone  
+## Git clone  
 
 1\. Clone the repository `git clone git@github.com:level-level/clarkson-core.git`  
 2\. Run `composer install` in the new `clarkson-core` directory.
 
-## Automatic via Composer  
+## Composer  
 
 1\. Add the Git repository to your `composer.json` file as a independent repository
 
