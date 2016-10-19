@@ -35,8 +35,9 @@ Building the theme requires [node.js](http://nodejs.org/download/). We recommend
 From the command line:
 
 1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
-2. Navigate to the theme directory, then run `npm install`
-3. Run `bower install`
+2. Navigate to the development folder in the theme directory
+3. Run `npm install`
+4. Run `bower install`
 
 You now have all the necessary dependencies to run the build process.
 
