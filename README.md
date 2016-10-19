@@ -10,7 +10,7 @@ Clarkson Theme is a modern set of tools to take WordPress theme developement bac
 | Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
 | gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
 | Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
-| Clarkson Core   |              | [php.net](http://php.net/manual/en/install.php) |
+| Clarkson Core   |              | [github.com](https://github.com/level-level/Clarkson-Core) |
 
 ## Whats does What?
 
