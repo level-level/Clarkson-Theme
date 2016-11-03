@@ -11,5 +11,5 @@ This class represent the `WP_Post` but with some more handy stuff.
 # Loading priority
 Right now it's alpabetic...
 
-#Props
+# Props
 We would like to thank HumanMade for the initial code of the [WordPress objects](https://github.com/humanmade/WordPress-Objects){:target="_blank"}.
