@@ -63,7 +63,9 @@ There are 3 posiblities to install Clarkson Core and as with all Must Use plugin
 
 4\. Now run `composer install` for your project's Composer file.
 
-> Keep in mind that this example is based on Roots Bedrock. You could also point the `mu-plugins` installer-paths to something as `web/wp/wp-content`.
+> Keep in mind that this example is based on Roots Bedrock. You could also point the `mu-plugins` installer-paths to something as `web/wp/wp-content`.  
+
+If you want to learn more about using Composer with WordPress then please check out this website [http://composer.rarst.net](http://composer.rarst.net/){:target="_blank"} or [https://roots.io/bedrock/docs/composer/](https://roots.io/bedrock/docs/composer/){:target="_blank"}
 
 
 ## * Loading Clarkson-Core as a Must Use plugin
