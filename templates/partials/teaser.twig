@@ -2,7 +2,7 @@
     <header>
         <h2 class="entry-title">
             <a href="{{ object.get_permalink() }}">
-                {{ object.get_title() }}
+                {{ object.get_title() | raw }}
             </a>
         </h2>
     </header>
