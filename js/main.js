@@ -114,7 +114,6 @@ function options () {
                     $container.html($content);
                     options();
                     init_toc();
-                    init_anchored_header();
                 }
             }
 
