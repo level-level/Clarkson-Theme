@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # Build script to release a clarkson-core.zip file
-# Ignores .git files and removes docs and tests from libs that were installed via 
+# Ignores .git files and removes docs and tests from libs that were installed via
 
 # 1. Needed setup:
 # - Directory with fully installed in "clarkson/Clarkson-Core"
 # - Directory with branch "github-pages" in clarkson/Clarkson-Theme
 #
-# 2. Run build.sh from clarkson/Clarkson-Theme/bin/
+# 2. Run build.sh from clarkson/Clarkson-Core/bin/
+# 3. Run build.sh from clarkson/Clarkson-Theme/bin/
 # 3. Commit changes to GitHub pages
 
 path=${PWD##*/}
@@ -28,7 +29,7 @@ done
 echo "Running from $ORIGDIR"
 
 # Go to root of Clarkson-Theme
-cd "../" 
+cd "../"
 
 # Clean up possible extractions of clarkson-core
 rm -rfv builds/zip/Clarkson-Core
@@ -38,22 +39,5 @@ cd "../"
 
 echo "$(pwd)"
 
-zip -r clarkson-core.zip clarkson-core -x "*.git*"
-mv clarkson-core.zip Clarkson-Theme/builds/zip/
 
-
-cd Clarkson-Core/
-echo "$(pwd)"
-
-# With vendors
-VENDOR="$(pwd)/vendor"
-
-# composer
-cd $VENDOR/composer && rm -rf installed.json
-
-# Twig
-cd $VENDOR/twig/twig && rm -rf phpunit.xml.dist test doc README.rst CHANGELOG .editorconfig .travis.xml composer.json
-cd $VENDOR/twig/extensions && rm -rf phpunit.xml.dist test doc README.rst .travis.yml composer.json
-
-# Symfony translation
-cd $VENDOR/symfony/translation && rm -rf phpunit.xml.dist Tests README.md CHANGELOG.md composer.json
+mv "$(pwd)/Clarkson-Core/build/clarkson-core.zip" "Clarkson-Theme/builds/zip/"
