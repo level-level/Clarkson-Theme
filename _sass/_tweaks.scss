@@ -18,13 +18,13 @@ html {
 
 pre {
   padding: 1rem;
-  background: #444;
+  background: color("grey", "darken-2");
   word-wrap: normal;
   word-break: normal;
   border-radius: 5px;
 
   code {
-    background-color: #444;
+    background-color: color("grey", "darken-2");
     color: white;
   }
 
@@ -33,7 +33,6 @@ pre {
 code {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   padding: 2px;
-  background: #FFF;
   border-radius: 3px;
   font-size: 0.9em;
 }
