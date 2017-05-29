@@ -4,9 +4,9 @@
   title: Twig Templates
 - docname: wordpress-objects
   title: WordPress objects
-- docname: custom-objects
-  title: Custom Objects
 - docname: adding-objects
   title: Adding objects
+- docname: custom-objects
+  title: Custom Objects
 - docname: upgrading
   title: Upgrading
