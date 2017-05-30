@@ -1,5 +1,5 @@
 <?php
-namespace Clarkson\WPADMIN\Editor;
+namespace Clarkson\WPadmin;
 
 /***
  *
@@ -9,19 +9,7 @@ namespace Clarkson\WPADMIN\Editor;
 
 class Editor
 {
-    protected $instance = null;
-
-    public static function get_instance()
-    {
-        static $instance = null;
-        if (null === $instance) {
-            $instance = new Editor();
-        }
-
-        return $instance;
-    }
-
-    protected function __construct(){
+    function __construct(){
 
         add_filter( 'tiny_mce_before_init', array($this, 'block_formats' ) );
 
@@ -42,8 +30,4 @@ class Editor
         $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
         return $html;
     }
-
-
 }
-
-Editor::get_instance();

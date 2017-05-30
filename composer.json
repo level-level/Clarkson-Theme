@@ -1,0 +1,20 @@
+{
+    "name": "level-level/clarkson-theme",
+    "type": "project",
+    "license": "private",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/level-level/clarkson-hooks"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Hooks\\": "app/Hooks",
+            "Clarkson\\": "app/Clarkson"
+        }
+    },
+    "require": {
+        "level-level/clarkson-hooks": "dev-master"
+    }
+}
