@@ -1,7 +1,7 @@
 <?php
 
 // Load Composer autoloader
-$autoloader_path = get_stylesheet_directory() . '/vendor/autoload.php';
+$autoloader_path = get_template_directory() . '/vendor/autoload.php';
 if( file_exists( $autoloader_path ) ){
     include_once( $autoloader_path );
 } else {
