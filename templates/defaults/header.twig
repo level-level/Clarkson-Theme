@@ -4,8 +4,8 @@
     {% if true == is_front_page() %}</h1>{% endif %}
 
     <nav class="nav primary-nav">
-        {% if (has_nav_menu('primary-navigation'))  %}
-            {{ wp_nav_menu( {'theme_location': 'primary-navigation', 'menu_class': 'menu primary-menu'} ) }}
+        {% if (has_nav_menu('primary_navigation'))  %}
+            {{ wp_nav_menu( {'theme_location': 'primary_navigation', 'menu_class': 'menu primary-menu'} ) }}
         {% endif %}
     </nav>
 </header>
