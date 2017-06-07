@@ -27,8 +27,9 @@ Because we can't initialize a PHP class that has a minus within it's name, we ha
 > CPT `ll-company` becomes => `wordpress-objects/ll_company.php` and internaly gets initialized like `new ll_company();`.
 
 ## Loading priority
-Version 0.1.0 = Alpabetic  
-Version 0.2.0 = SPL Autoloaded
+- Version 0.2.0 = SPL Autoloaded via Composer.
+- Version 0.1.0 = Alpabetic via `glob`.
+
 
 ## Props
 We would like to thank HumanMade for the initial code of the [WordPress objects](https://github.com/humanmade/WordPress-Objects){:target="_blank"}.
