@@ -46,7 +46,7 @@ There are 3 posiblities to install Clarkson Core and as with all Must Use plugin
 "require": {
   "composer/installers": "1.0.12",
   "johnpbloch/wordpress" : ">=4.6",
-  "level-level/clarkson-core": "0.1.*"
+  "level-level/clarkson-core": "0.2.*"
 },
 ~~~
 
