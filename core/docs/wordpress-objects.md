@@ -15,6 +15,16 @@ And a [Clarkson User](https://github.com/level-level/Clarkson-Core/blob/master/w
 ## Implementing your own custom WordPress objects
 You can implement and overwrite all class with your own [custom objects](/core/docs/custom-objects.html)
 
+## Filenaming convention
+
+Because we can't initialize a PHP class that has a minus within it's name, we have to sanitize the class names:
+
+- non-alpha and non-numeric characters become underscores `_`.
+- String to lowercase is require by WordPress post-type [naming convention](https://codex.wordpress.org/Function_Reference/register_post_type#post_type){:target="_blank"}
+- Minus `-` becomes underscores `_`
+
+
+> CPT `ll-company` becomes => `wordpress-objects/ll_company.php` and internaly gets initialized like `new ll_company();`.
 
 ## Loading priority
 Version 0.1.0 = Alpabetic  

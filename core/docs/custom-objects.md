@@ -6,7 +6,7 @@ type: core
 # Custom objects  
 
 ## Autoloader
-Clarkson Core autoloads all registered Custom Post Types and Taxonomies from the `wordpress-objects` directory within your active theme.  
+Clarkson Core autoloads all registered Custom Post Types and Taxonomies from the `wordpress-objects` directory within your active theme. 
 
 Clarkon Core is _Child Theme_ compatible. So when your have a `post.php` in both your parent theme as your child theme, then the child theme class gets loaded instead of the parent one. 🎉 
  
