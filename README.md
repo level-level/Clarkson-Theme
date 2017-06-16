@@ -12,7 +12,8 @@ If you would like to read about the documentation, just check out the [Clarkson]
 
 ## What do we use
 
-- Clarkson Core [(A WordPress Twig plugin)](wp-clarkson.com/core)
+- Clarkson Core [(A WordPress Twig plugin)](http://wp-clarkson.com/core)
+- Clarkson Hooks [WordPress Hooks and Autoloading Namespaced Classes](https://github.com/level-level/clarkson-hooks)
 - Composer
 - Gulp
-- Bower (we will be depracated with NPM 5)
+- Bower (Will soon be depracated with NPM 5)
