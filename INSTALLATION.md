@@ -28,6 +28,10 @@ Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](h
 ### Default
 Clone repository or download zip and rename to your project's name.
 
+### Install composer
+1. Install [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) / [short info](https://www.abeautifulsite.net/installing-composer-on-os-x)
+2. Run `composer install` in this theme folder.
+
 ### Install gulp and Bower
 
 Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
