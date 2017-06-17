@@ -1,7 +1,7 @@
 # Site settings
 title: Clarkson
 email: support@level-level.com
-description: Clarkson is a WordPress starter theme and plugin.
+description: Clarkson is a WordPress starter theme and Twig plugin.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://level-level.github.io" # the base hostname & protocol for your site
 twitter_username: levellevel
