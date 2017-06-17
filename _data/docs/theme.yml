@@ -2,5 +2,7 @@
   title: Installation
 - docname: usage
   title: Usage
+- docname: tips
+  title: Tips
 - docname: json
   title: JSON endpoint
