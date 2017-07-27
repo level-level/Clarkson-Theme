@@ -1,9 +1,9 @@
 {
   "name": "clarkson-theme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Level Level",
   "contributors": "Robin Aldenhoven <robin.aldenhoven@gmail.com>",
-  "homepage": "http://level-level.com",
+  "homepage": "https://level-level.com",
   "private": true,
   "repository": {
     "type": "git",
