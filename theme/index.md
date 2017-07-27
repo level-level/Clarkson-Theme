@@ -30,14 +30,14 @@ Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates
 ## BrowserSync
 Keeping multiple browsers and devices synchronized, along with injecting updated CSS and JS in your browser. *
       
-Currently Roots already uses an `npm` only setup, but this is  up to you to swap this out. Because everybody already wants to use Yarn, right :)
-
 ## Bower
 Front-end package management that just installs the right versions of the packages you need and their dependencies. *
+
+Currently Roots Sage 9.0 theme already uses an `npm` and Yarn only setup, but it's up to you to swap this out. Our next `0.3.0` release will drop Bower for a NPM 5.0 only package installation because that version supports a `.lock` file.
 
 ## asset-builder
 For the JSON file based asset pipeline. *
 
   
 
-> \* Yupp, we borrowed the Gulp file of Sage. Thank you! Just go to the `development` folder where all the tooling files are.
+> \* Yupp, we borrowed the Gulp file of Roots Sage. Thank you! Just go to the `development` folder where all the tooling files are.
