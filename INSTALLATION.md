@@ -36,7 +36,7 @@ Clone repository or download zip and rename to your project's name.
 
 Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
 
-From the command line:
+From the command line in the `/development` directory:
 
 1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
 2. Navigate to the development folder in the theme directory
@@ -48,6 +48,8 @@ You now have all the necessary dependencies to run the build process.
 ## Usage
 
 ### Available gulp commands
+
+From the command line in the `/development` directory:
 
 * `gulp` — Compile and optimize the files in your assets directory
 * `gulp watch` — Compile assets when file changes are made  
