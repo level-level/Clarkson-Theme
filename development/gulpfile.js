@@ -22,6 +22,14 @@ var uglify       = require('gulp-uglify');
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('../source/manifest.json');
 
+// Make it optional to overide the url you want to use for BrowserSync
+// - Create a file named browsersync.json in the "development" directory with { "url": "http://customdomain.dev" }
+try {
+    var browsersync = require('../source/browsersync.json');
+} catch (error) {
+    var browsersync = false;
+}
+
 // `path` - Paths to base asset directories. With trailing slashes.
 // - `path.source` - Path to the source files. Default: `assets/`
 // - `path.dist` - Path to the build directory. Default: `dist/`
@@ -29,6 +37,7 @@ var path = manifest.paths;
 
 // `config` - Store arbitrary configuration values here.
 var config = manifest.config || {};
+config.browsersyncUrl = ( browsersync ) ? browsersync.url : "http://local.wordpress.dev";
 
 // `globs` - These ultimately end up in their respective `gulp.src`.
 // - `globs.js` - Array of asset-builder JS dependency objects. Example:
