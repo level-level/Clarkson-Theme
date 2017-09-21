@@ -9,7 +9,6 @@ Clarkson Theme is a modern set of tools to take WordPress theme developement bac
 | PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
 | Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
 | gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 | Clarkson Core   |              | [github.com](https://github.com/level-level/Clarkson-Core) |
 
 ## Whats does What?
@@ -18,8 +17,6 @@ Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](h
 
 * [gulp](http://gulpjs.com/) build script that compiles both ~~Sass and~~ Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files to `dist` directory
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
-* [Bower](http://bower.io/) for front-end package management
-* [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
 * No Framework, roll your own!
 * [Twig Templating via Clarkson Core](http://twig.sensiolabs.org/)
 
@@ -32,16 +29,15 @@ Clone repository or download zip and rename to your project's name.
 1. Install [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) / [short info](https://www.abeautifulsite.net/installing-composer-on-os-x)
 2. Run `composer install` in this theme folder.
 
-### Install gulp and Bower
+### Install Gulp
 
 Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
 
 From the command line in the `/development` directory:
 
-1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
+1. Install [gulp](http://gulpjs.com) globally with `npm install -g gulp`
 2. Navigate to the development folder in the theme directory
 3. Run `npm install`
-4. Run `bower install`
 
 You now have all the necessary dependencies to run the build process.
 
@@ -75,4 +71,3 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
   }
 ...
 ```
-

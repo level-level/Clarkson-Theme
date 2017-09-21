@@ -18,9 +18,14 @@ var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var fs = require('fs');
 
-// See https://github.com/austinpray/asset-builder
-var manifest = require('asset-builder')('../source/manifest.json');
+
+var manifest = require('../source/manifest.json');
+var browsersync = {};
+if (fs.existsSync('../source/browsersync.json')) {
+  browsersync = require('../source/browsersync.json');
+}
 
 // `path` - Paths to base asset directories. With trailing slashes.
 // - `path.source` - Path to the source files. Default: `assets/`
@@ -29,25 +34,35 @@ var path = manifest.paths;
 
 // `config` - Store arbitrary configuration values here.
 var config = manifest.config || {};
+config.browsersyncUrl =  browsersync.url || config.browsersyncUrl;
 
 // `globs` - These ultimately end up in their respective `gulp.src`.
-// - `globs.js` - Array of asset-builder JS dependency objects. Example:
+// - `globs.js` - Array of JS dependency objects. Example:
 //   ```
 //   {type: 'js', name: 'main.js', globs: []}
 //   ```
-// - `globs.css` - Array of asset-builder CSS dependency objects. Example:
+// - `globs.css` - Array of CSS dependency objects. Example:
 //   ```
 //   {type: 'css', name: 'main.css', globs: []}
 //   ```
 // - `globs.fonts` - Array of font path globs.
 // - `globs.images` - Array of image path globs.
-// - `globs.bower` - Array of all the main Bower files.
-var globs = manifest.globs;
 
-// `project` - paths to first-party assets.
-// - `project.js` - Array of first-party JS assets.
-// - `project.css` - Array of first-party CSS assets.
-var project = manifest.getProjectGlobs();
+var resources = manifest.resources;
+var globs = {};
+var project = {};
+resources.forEach(function(resource){
+  if(typeof globs[resource.type] == 'undefined'){
+    globs[resource.type] = [];
+  }
+  globs[resource.type].push(resource);
+  if(typeof project[resource.type] == 'undefined'){
+    project[resource.type] = [];
+  }
+  project[resource.type] = project[resource.type].concat(resource.globs);
+});
+globs.fonts = project.fonts;
+globs.images = project.images;
 
 // CLI options
 var enabled = {
@@ -145,12 +160,12 @@ var writeToManifest = function(directory) {
 // Run `gulp -T` for a task summary
 
 // ### Styles
-// `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
+// `gulp styles` - Compiles, combines, and optimizes CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
 gulp.task('styles', function() {
   var merged = merge();
-  manifest.forEachDependency('css', function(dep) {
+  globs.css.forEach(function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
     if (!enabled.failStyleTask) {
       cssTasksInstance.on('error', function(err) {
@@ -166,11 +181,11 @@ gulp.task('styles', function() {
 });
 
 // ### Scripts
-// `gulp scripts` - Runs JSHint then compiles, combines, and optimizes Bower JS
+// `gulp scripts` - Runs JSHint then compiles, combines, and optimizes JS
 // and project JS.
 gulp.task('scripts', ['jshint'], function() {
   var merged = merge();
-  manifest.forEachDependency('js', function(dep) {
+  globs.js.forEach(function(dep) {
     merged.add(
       gulp.src(dep.globs, {base: 'scripts'})
         .pipe(jsTasks(dep.name))
@@ -187,7 +202,7 @@ gulp.task('scripts', ['jshint'], function() {
 gulp.task('fonts', function() {
   var sources = [];
 
-  for (i = 0; i < globs.fonts.length; i++) { 
+  for (i = 0; i < globs.fonts.length; i++) {
     sources.push( globs.fonts[i] + '.eot');
     sources.push( globs.fonts[i] + '.svg');
     sources.push( globs.fonts[i] + '.ttf');
@@ -218,7 +233,7 @@ gulp.task('images', function() {
 // `gulp jshint` - Lints configuration JSON and project JS.
 gulp.task('jshint', function() {
   return gulp.src([
-    'bower.json', 'gulpfile.js'
+    '!./node_modules/**', '!./../../../plugins/**', 'gulpfile.js'
   ].concat(project.js))
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
@@ -228,10 +243,10 @@ gulp.task('jshint', function() {
 // ### Clean
 // `gulp clean` - Deletes the build folder entirely.
 gulp.task('clean', function(){
-	var del = require('del');
+  var del = require('del');
 
-	del([path.dist], {force:true}, function (err, paths) {
-	});
+  del([path.dist], {force:true}, function (err, paths) {
+  });
 });
 
 // ### Watch
@@ -255,7 +270,7 @@ gulp.task('watch', function() {
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
-  gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
+  gulp.watch([path.source + 'manifest.json'], ['build']);
 });
 
 // ### Build

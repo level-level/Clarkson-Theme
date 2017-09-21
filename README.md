@@ -16,4 +16,3 @@ If you would like to read about the documentation, just check out the [Clarkson]
 - Clarkson Hooks [WordPress Hooks and Autoloading Namespaced Classes](https://github.com/level-level/clarkson-hooks)
 - Composer
 - Gulp
-- Bower (Will soon be depracated with NPM 5)

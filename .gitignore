@@ -1,5 +1,5 @@
 /development/node_modules
-/development/bower_components
 /development/npm-*
 /dist/
 /vendor/
+/.idea/

@@ -4,25 +4,35 @@
         "source": "../source/",
         "dist": "../dist/"
     },
-    "dependencies": {
-        "main.js": {
-            "files": [
-                "scripts/main.js"
-            ],
-            "main": true
-        },
-        "main.css": {
-            "files": [
-                "styles/main.less"
-            ],
-            "main": true
-        },
-        "editor-style.css": {
-            "files": [
-                "styles/editor.less"
-            ]
-        }
-    },
+    "resources":[
+      {
+        "type": "js",
+        "name": "main.js",
+        "globs": [
+          "../source/scripts/main.js"
+        ]
+      },
+      {
+        "type": "css",
+        "name": "main.css",
+        "globs": ["../source/styles/main.less"]
+      },
+      {
+        "type": "css",
+        "name": "editor-style.css",
+        "globs": ["../source/styles/editor.less"]
+      },
+      {
+        "type": "fonts",
+        "name": "fonts",
+        "globs": ["../source/fonts/**/*"]
+      },
+      {
+        "type": "images",
+        "name": "images",
+        "globs": ["../source/images/**/*"]
+      }
+    ],
     "config": {
         "browsersyncUrl": "http://clarkson.dev"
     }
