@@ -59,7 +59,7 @@ For example, if your local development URL is `http://project-name.dev` you woul
 ```json
 ...
   "config": {
-    "devUrl": "http://project-name.dev"
+      "browsersyncUrl": "http://project-name.dev"
   }
 ...
 ```
@@ -67,7 +67,15 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
 ```json
 ...
   "config": {
-    "devUrl": "http://localhost:8888/project-name/"
+      "browsersyncUrl": "http://localhost:8888/project-name/"
   }
 ...
+```
+
+#### Custom browsersyncUrl
+If you have a different development url from the rest of your team then create a file `source/browsersync.json` with the following config:
+```
+{
+    "url": "http://local.wordpress.dev"
+}
 ```
