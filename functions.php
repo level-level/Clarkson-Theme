@@ -13,6 +13,3 @@ if( file_exists( $autoloader_path ) ){
     trigger_error(" Don't forget to run composer install.", E_USER_ERROR );
 }
 // End of Composer autoloader
-
-
-
