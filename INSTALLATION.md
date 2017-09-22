@@ -7,9 +7,8 @@ Clarkson Theme is a modern set of tools to take WordPress theme developement bac
 | Prerequisite    | How to check | How to install
 | --------------- | ------------ | ------------- |
 | PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
-| Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Clarkson Core   |              | [github.com](https://github.com/level-level/Clarkson-Core) |
+| Node.js 5.0.x   | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| Clarkson Core 2.x  |              | [github.com](https://github.com/level-level/Clarkson-Core) |
 
 ## Whats does What?
 
@@ -25,25 +24,23 @@ Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](h
 ### Default
 Clone repository or download zip and rename to your project's name.
 
-### Install composer
+### Install Composer
 1. Install [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) / [short info](https://www.abeautifulsite.net/installing-composer-on-os-x)
 2. Run `composer install` in this theme folder.
 
-### Install Gulp
+### Install Dependencies
 
-Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
-
-From the command line in the `/development` directory:
-
-1. Install [gulp](http://gulpjs.com) globally with `npm install -g gulp`
-2. Navigate to the development folder in the theme directory
-3. Run `npm install`
+1. Run `npm install`
 
 You now have all the necessary dependencies to run the build process.
+
 
 ## Usage
 
 ### Available gulp commands
+
+Gulp is installed via NPM so it's available via `node_modules/gulp/bin/gulp.js` directory.  
+But if you want to install it globaly, please make sure you have the latest version [gulp](http://gulpjs.com).
 
 From the command line in the `/development` directory:
 
