@@ -14,7 +14,6 @@ var less         = require('gulp-less');
 var merge        = require('merge-stream');
 var cleanCSS     = require('gulp-clean-css');
 var plumber      = require('gulp-plumber');
-var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
@@ -66,16 +65,11 @@ globs.images = project.images;
 
 // CLI options
 var enabled = {
-  // Disable static asset revisioning when `--production`
-  rev: false,
   // Disable source maps when `--production`
   maps: !argv.production,
   // Fail styles task on error when `--production`
   failStyleTask: argv.production
 };
-
-// Path to the compiled assets manifest in the dist directory
-var revManifest = path.dist + 'assets.json';
 
 // ## Reusable Pipelines
 // See https://github.com/OverZealous/lazypipe
@@ -112,9 +106,6 @@ var cssTasks = function(filename) {
       debug: true
     })
     .pipe(function() {
-      return gulpif(enabled.rev, rev());
-    })
-    .pipe(function() {
       return gulpif(enabled.maps, sourcemaps.write('.'));
     })();
 };
@@ -134,9 +125,6 @@ var jsTasks = function(filename) {
     .pipe(concat, filename)
     .pipe(uglify)
     .pipe(function() {
-      return gulpif(enabled.rev, rev());
-    })
-    .pipe(function() {
       return gulpif(enabled.maps, sourcemaps.write('.'));
     })();
 };
@@ -148,10 +136,6 @@ var writeToManifest = function(directory) {
   return lazypipe()
     .pipe(gulp.dest, path.dist + directory)
     .pipe(browserSync.stream, {match: '**/*.{js,css}'})
-    .pipe(rev.manifest, revManifest, {
-      base: path.dist,
-      merge: true
-    })
     .pipe(gulp.dest, path.dist)();
 };
 
