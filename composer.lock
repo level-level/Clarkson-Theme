@@ -4,16 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "836ac10c013aaa43db4786957654eb73",
-    "content-hash": "17e19e4f6a61e379e3289e992bf29d89",
+    "hash": "dc77772f44adcfd5a3875f833b296234",
+    "content-hash": "8c497f2be2347c8ef639fc8fa78ff1bc",
     "packages": [
         {
             "name": "level-level/clarkson-hooks",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/level-level/clarkson-hooks",
-                "reference": "bee687abb4aa75623027e86f3cba3d1e96c57a4b"
+                "url": "https://github.com/level-level/clarkson-hooks.git",
+                "reference": "052f64c30379c80676ace04e39b58f321a5319b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/level-level/clarkson-hooks/zipball/052f64c30379c80676ace04e39b58f321a5319b3",
+                "reference": "052f64c30379c80676ace04e39b58f321a5319b3",
+                "shasum": ""
             },
             "type": "library",
             "autoload": {
@@ -24,6 +30,7 @@
                     "clarkson-hooks.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -34,15 +41,13 @@
                 }
             ],
             "description": "Solution for 'Just in time' WordPress Hooks.",
-            "time": "2017-03-17 13:49:26"
+            "time": "2017-09-25 10:40:12"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "level-level/clarkson-hooks": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

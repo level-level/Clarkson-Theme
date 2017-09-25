@@ -7,9 +7,6 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
-        },
-            "type": "git",
-            "url": "https://github.com/level-level/clarkson-hooks"
         }
     ],
     "autoload": {
@@ -19,6 +16,6 @@
         }
     },
     "require": {
-        "level-level/clarkson-hooks": "dev-master"
+        "level-level/clarkson-hooks": "^0.1.0"
     }
 }
