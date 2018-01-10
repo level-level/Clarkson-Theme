@@ -246,6 +246,9 @@ gulp.task('watch', function() {
     snippetOptions: {
       whitelist: ['/wp-admin/admin-ajax.php'],
       blacklist: ['/wp-admin/**']
+    },
+    "watchOptions": {
+      usePolling: true
     }
   });
 
