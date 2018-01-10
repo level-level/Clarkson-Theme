@@ -132,11 +132,11 @@ var jsTasks = function(filename) {
 // ### Write to rev manifest
 // If there are any revved files then write them to the rev manifest.
 // See https://github.com/sindresorhus/gulp-rev
-var writeToManifest = function(directory) {
+var writeToDestination = function(directory) {
+
   return lazypipe()
-    .pipe(gulp.dest, path.dist + directory)
     .pipe(browserSync.stream, {match: '**/*.{js,css}'})
-    .pipe(gulp.dest, path.dist)();
+    .pipe(gulp.dest, path.dist + directory)();
 };
 
 // ## Gulp tasks
@@ -160,7 +160,7 @@ gulp.task('styles', function() {
       .pipe(cssTasksInstance));
   });
   return merged
-    .pipe(writeToManifest('styles'));
+    .pipe(writeToDestination('styles'));
 });
 
 // ### Scripts
@@ -175,7 +175,7 @@ gulp.task('scripts', ['jshint'], function() {
     );
   });
   return merged
-    .pipe(writeToManifest('scripts'));
+    .pipe(writeToDestination('scripts'));
 });
 
 
