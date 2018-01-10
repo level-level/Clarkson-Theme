@@ -46,9 +46,12 @@ But if you want to install it globaly, please make sure you have the latest vers
 
 From the command line in the `/development` directory:
 
-* `gulp` — Compile and optimize the files in your assets directory
-* `gulp watch` — Compile assets when file changes are made  
-* `gulp --production` — Compile assets for production (no source maps).
+* `node_modules/.bin/gulp` — Compile and optimize the files in your assets directory
+* `node_modules/.bin/gulp --production` — Compile assets for production (no source maps).
+* `node_modules/.bin/gulp watch` — Compile assets when file changes are made
+
+To just run one task, for example the `styles` task run `node_modules/.bin/gulp styles`.
+
 
 ### Using BrowserSync
 
