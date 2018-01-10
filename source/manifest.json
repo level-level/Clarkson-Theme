@@ -34,6 +34,6 @@
       }
     ],
     "config": {
-        "browsersyncUrl": "http://clarkson.dev"
+        "browsersyncUrl": "http://clarkson.test"
     }
 }
