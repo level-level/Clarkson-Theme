@@ -22,9 +22,11 @@ Clarkson Theme uses [gulp](http://gulpjs.com/) as its build system and [Bower](h
 ## Installation
 
 ### Default
-Clone repository or download zip and rename to your project's name.
+Clone the repository or [download](https://github.com/level-level/Clarkson-Theme/archive/master.zip) the zip and rename it to your project's name.
+`git clone git@github.com:level-level/Clarkson-Theme.git`
 
-### Install Composer
+### Composer
+If you don't have a `vendor` directory in your theme then follow the next steps:
 1. Install [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) / [short info](https://www.abeautifulsite.net/installing-composer-on-os-x)
 2. Run `composer install` in this theme folder.
 
