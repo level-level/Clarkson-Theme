@@ -50,13 +50,13 @@ From the command line in the `/development` directory:
 
 ### Using BrowserSync
 
-To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `source/manifest.json` to reflect your local development hostname.
+To use BrowserSync during `gulp watch` you need to update `browsersyncUrl` at the bottom of `source/manifest.json` to reflect your local development hostname.
 
-For example, if your local development URL is `http://project-name.dev` you would update the file to read:
+For example, if your local development URL is `http://project-name.test` you would update the file to read:
 ```json
 ...
   "config": {
-      "browsersyncUrl": "http://project-name.dev"
+      "browsersyncUrl": "http://project-name.test"
   }
 ...
 ```
