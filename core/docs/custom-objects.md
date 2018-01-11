@@ -10,7 +10,7 @@ Clarkson Core autoloads all registered Custom Post Types and Taxonomies from the
 
 Clarkon Core is _Child Theme_ compatible. So when your have a `post.php` in both your parent theme as your child theme, then the child theme class gets loaded instead of the parent one. 🎉 
  
-_You can create a Mother class which the Post class Extends from, but you should load this class by manually._
+_You can create a Base class which the Post class Extends from, but you should load this class by manually._
 
 ## Custom Post Types
 It's possible to extend the Clarkson Object to your own Custom Post Type by creating classes that represent the Custom Post Types.  
