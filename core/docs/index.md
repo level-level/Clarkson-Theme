@@ -24,15 +24,15 @@ There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
 Clarkson is available on [Packagist](https://packagist.org/packages/level-level/).
 
 1\. Require `composer/installers`
-~~~bash
+```bash
 composer require composer/installers
-~~~
+```
 
 2\. Require Clarkson Core
 
-~~~bash
+```bash
 composer require level-level/clarkson-core
-~~~
+```
 
 It's labeled as a `mu-plugin` so it will be installed there.
 
@@ -54,11 +54,9 @@ If you want to learn more about using Composer with WordPress then please check 
 
 > As with all Must Use plugins in the `wp-content/mu-plugins/` directory one needs to load them manually or use a [mu-plugin autoloader](https://github.com/level-level/ll-plugin-autoloader/){:target="_blank"}.
     
-~~~php
+```php
 <?php // wp-content/mu-plugins/load.php
 require WPMU_PLUGIN_DIR.'/clarkson-core/clarkson-core.php';
-~~~
-
-
+```
 
 Now go and have fun &#127881;
