@@ -23,7 +23,7 @@ A new WP_Query object runs five queries by default, including calculating pagina
 
 Finally it returns an Array of the same WordPress Object Class (hence the `self`).
 
-Source: [10up](https://10up.github.io/Engineering-Best-Practices/php/){:target="_blank"}
+Source: [10up](https://10up.github.io/Engineering-Best-Practices/php/#performance){:target="_blank"}
 
 ## PHP render_twig vs. Twig include
 {:id="render-vs-include"}
