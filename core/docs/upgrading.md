@@ -3,6 +3,15 @@ layout: docs
 title: Upgrading
 type: core
 ---
+# Upgrading from 0.2.0 to 0.2.1
+In this version, a more generic custom template functionality has been introduced. This deprecated the `page-xyz.twig` for `template-xyz.twig`.
+ When having `WP_DEBUG` enable this will trigger a deprecated warning. To disable this warning use to following filter:
+
+ ```
+ add_filter('clarkson_core_deprecated_warning_page_template', '__return_false');
+ ```
+
+
 # Upgrading from 0.1.0 to 0.2.0
 
 Important note when upgrading to 0.2.0
@@ -16,11 +25,12 @@ In 0.2.0. we implemented autoloading (spl_autoload_register) on the `wordpress-o
 One breaking change is that the old glob'ing method of all your themes (`functions`, `post-types` and `taxonomies` directory) by Clarkson Core is removed. 
 We've build-in a quick-fix to maintain backwards compatiblity, but it's disabled by default. To enable it add this in a file within your `mu-plugins` directory:  
 
-`wp-content/mu-plugins/clarkson-core-deprecated-theme-loading.php`
+`wp-content/mu-plugins/clarkson-core-deprecated.php`
 
 ## Enable via theme autoload filter  
 
-~~~
+~~~php
 <?php
+// Add to mu-plugins/clarkson-core-deprecated.php 
 add_filter('clarkson_core_autoload_theme_pre_020', '__return_true');
 ~~~

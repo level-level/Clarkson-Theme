@@ -10,4 +10,15 @@ Uses the internal [Template Hierarchy](https://developer.wordpress.org/themes/ba
 so `index.php` will become `index.twig` or `archive-company.php` with `archive-company.twig`, and still have all Posts or Custom Post Types available in `objects` variable a.k.a. __"all the posts from The Loop"__.
 
 ## Custom templates
-If you would like to create a custum page template then create a file that is prefixed with `page-`, so it will become `page-about.twig`. This template can be selected through the regular template dropdown.
+If you would like to create a custom page template then create a file that is prefixed with `template-`, so it will become `template-headquater.twig`. This template can be selected through the regular Page template dropdown.
+
+### Register a custom template for Custom Post Types <small><ins>Since 0.2.1</ins></small> 
+If you would like to make a custom template available for a Custom Post Type (WP 4.7) then you will have to register this specific post type via the  `clarkson_core_templates_types_for_%TEMPLATE_NAME.twig%`.
+
+~~~php
+<?php
+add_filter('clarkson_core_templates_types_for_template-headquarter.twig', function( $post_types ){
+    $post_types[] = 'company';
+    return $post_types;
+});
+~~~
