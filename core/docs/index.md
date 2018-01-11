@@ -14,7 +14,7 @@ There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
 
 ## Quick download
 {:id="download"}
-[Download](http://wp-clarkson.com/builds/zip/clarkson-core.zip){:.btn .waves-effect .waves-light}{:target="_blank"}  &nbsp; the latest stable `.zip` and place it within your `mu-plugins` directory.
+[Download](http://wp-clarkson.com/builds/zip/clarkson-core.zip){:.btn}{:target="_blank"}  &nbsp; the latest stable `.zip` and place it within your `mu-plugins` directory.
 
 <!-- This package is build via "clarkson-theme/bin/build.sh" -->
 

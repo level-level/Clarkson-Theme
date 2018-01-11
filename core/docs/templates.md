@@ -22,3 +22,10 @@ add_filter('clarkson_core_templates_types_for_template-headquarter.twig', functi
     return $post_types;
 });
 ~~~
+
+### Deprecated `page-xyz.twig`
+ When having `WP_DEBUG` enable this will trigger a deprecated warning. To disable this warning use to following filter:
+
+ ```php
+ add_filter('clarkson_core_deprecated_warning_page_template', '__return_false');
+ ```

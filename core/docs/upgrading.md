@@ -3,13 +3,13 @@ layout: docs
 title: Upgrading
 type: core
 ---
-# Upgrading from 0.2.0 to 0.2.1
-In this version, a more generic custom template functionality has been introduced. This deprecated the `page-xyz.twig` for `template-xyz.twig`.
- When having `WP_DEBUG` enable this will trigger a deprecated warning. To disable this warning use to following filter:
 
- ```
- add_filter('clarkson_core_deprecated_warning_page_template', '__return_false');
- ```
+Alle release can be found on [GitHub](https://github.com/level-level/Clarkson-Core/releases)
+
+# Upgrading from 0.2.0 to 0.2.1
+In this version, a more generic custom template functionality has been introduced. This deprecated the `page-xyz.twig` for `template-xyz.twig`. More information about this new template feature can be found [here](http://wp-clarkson.com/core/docs/templates.html#custom-templates).
+
+[View release notes on GitHub](https://github.com/level-level/Clarkson-Core/releases/tag/0.2.1){:.btn }{:target="_blank"}
 
 
 # Upgrading from 0.1.0 to 0.2.0
@@ -34,3 +34,5 @@ We've build-in a quick-fix to maintain backwards compatiblity, but it's disabled
 // Add to mu-plugins/clarkson-core-deprecated.php 
 add_filter('clarkson_core_autoload_theme_pre_020', '__return_true');
 ~~~
+
+[View release notes on GitHub](https://github.com/level-level/Clarkson-Core/releases/tag/0.2.0){:.btn }{:target="_blank"}
