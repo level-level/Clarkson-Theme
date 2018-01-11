@@ -4,15 +4,13 @@ title: Documentation
 type: core
 ---
 # Installation
-We suggest to put the plugin in your `mu-plugins` directory.
-
-There are 3 posiblities to install Clarkson Core & as with all Must Use plugins, you need to [load it manually *](#loading-clarkson-core-as-a-must-use-plugin).
+There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
 
 * [Quick download](#download)
-* [Git clone](#git-clone)
 * [Composer](#composer)
+* [Git clone](#git-clone)
 
-> Remember you still need to [load Clarkson](#loading-clarkson-core-as-a-must-use-plugin) by yourself.
+> Remember as with all Must Use plugins, you still need to [load Clarkson](#loading-clarkson-core-as-a-must-use-plugin)  yourself.
 
 ## Quick download
 {:id="download"}
@@ -20,15 +18,10 @@ There are 3 posiblities to install Clarkson Core & as with all Must Use plugins,
 
 <!-- This package is build via "clarkson-theme/bin/build.sh" -->
 
-## Manual via a git clone
-{:id="git-clone"}
-
-1\. Clone the repository `git clone git@github.com:level-level/clarkson-core.git`  
-
-2\. Run `composer install` in the new `clarkson-core` directory.
-
 ## Install via Composer
 {:id="composer"}
+
+Clarkson is available on [Packagist](https://packagist.org/packages/level-level/).
 
 1\. Require `composer/installers`
 ~~~bash
@@ -49,7 +42,12 @@ It's labeled as a `mu-plugin` so it will be installed there.
 If you want to learn more about using Composer with WordPress then please check out this website [http://composer.rarst.net](http://composer.rarst.net/){:target="_blank"} or [https://roots.io/bedrock/docs/composer/](https://roots.io/bedrock/docs/composer/){:target="_blank"}
 
 
+## Manual via a git clone
+{:id="git-clone"}
 
+1\. Clone the repository `git clone git@github.com:level-level/clarkson-core.git`  
+
+2\. Run `composer install` in the new `clarkson-core` directory.
 
 ## * Loading Clarkson-Core as a Must Use plugin
 {: id="loading"}
@@ -60,5 +58,7 @@ If you want to learn more about using Composer with WordPress then please check 
 <?php // wp-content/mu-plugins/load.php
 require WPMU_PLUGIN_DIR.'/clarkson-core/clarkson-core.php';
 ~~~
+
+
 
 Now go and have fun &#127881;
