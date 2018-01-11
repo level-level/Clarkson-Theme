@@ -24,8 +24,8 @@ pre {
   border-radius: 5px;
 
   code {
-    background-color: color("grey", "darken-2");
-    color: white;
+    background-color: transparent;
+    //color: white;
   }
 
 }
@@ -35,6 +35,7 @@ code {
   padding: 2px;
   border-radius: 3px;
   font-size: 0.9em;
+  background: #fff;
 }
 
 .hero-header {
@@ -43,7 +44,6 @@ code {
   font-weight: 300;
   line-height: 1.5;
   font-size: $h1-fontsize / 1.2;
-  color: #555;
   margin-top: $h1-fontsize;
   margin-bottom: $h1-fontsize;
 }
