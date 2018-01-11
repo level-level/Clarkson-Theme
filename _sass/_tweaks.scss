@@ -131,10 +131,13 @@ code {
 
 .core-accent {
   a {
-    color: #2f89c6;
+    color: #0089c2;
     //&.btn {
     //  color: $button-color-raised;
     //}
+  }
+  a:hover {
+    color: #2f89c6;
   }
 
 }
