@@ -10,7 +10,7 @@ hero-header: "Clarkson Theme is a modern set of tools to take WordPress theme de
 ---
 
 ## Twig based starter theme
-Thanks to Clarkson Core
+Thanks to [Clarkson Core](http://wp-clarkson.com/core).
 
 ## Clean theme folder
 We try to keep the theme folder as clean as possible by:  
@@ -22,14 +22,13 @@ No need for extra `single.php` files.
 
 ## Be free of CSS Frameworks
 We didn't want to include something like Bootstrap or another Framework.
- 
-## Gulp
-Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates and minifies files. *
 
+## Gulp
+Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates and minifies files.
 
 ## BrowserSync
-Keeping multiple browsers and devices synchronized, along with injecting updated CSS and JS in your browser. *
-      
+Keeping multiple browsers and devices synchronized, along with injecting updated CSS and JS in your browser.
+
 ## Bower
 Front-end package management that just installs the right versions of the packages you need and their dependencies. *
 
