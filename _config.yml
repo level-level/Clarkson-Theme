@@ -7,7 +7,7 @@ url: "http://level-level.github.io" # the base hostname & protocol for your site
 twitter_username: levellevel
 github_username:  level-level
 
-gems:
+plugins:
   - jekyll-sitemap
 
 exclude:
@@ -15,6 +15,8 @@ exclude:
   - bin
   - Gemfile
   - Gemfile.lock
+
+#permalink: /news/:title/
 
 collections:
   theme:
