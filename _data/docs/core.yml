@@ -8,5 +8,7 @@
   title: Adding objects
 - docname: custom-objects
   title: Custom Objects
+- docname: performance
+  title: Performance tips
 - docname: upgrading
   title: Upgrading
