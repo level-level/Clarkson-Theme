@@ -141,8 +141,8 @@ var jsTasks = function(filename) {
 var writeToDestination = function(directory) {
 
   return lazypipe()
-    .pipe(browserSync.stream, {match: '**/*.{js,css}'})
-    .pipe(gulp.dest, path.dist + directory)();
+    .pipe(gulp.dest, path.dist + directory)
+    .pipe(browserSync.stream, {match: '**/*.{js,css}'})();
 };
 
 // ## Gulp tasks
