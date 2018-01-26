@@ -234,9 +234,9 @@ gulp.task('jshint', function() {
 
 // ### Clean
 // `gulp clean` - Deletes the build folder entirely.
+// Force because we are deleting a file outside of our working directory
 gulp.task('clean', function(){
   var del = require('del');
-
   del([path.dist], {force:true}, function (err, paths) {
   });
 });
