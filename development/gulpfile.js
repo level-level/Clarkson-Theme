@@ -252,17 +252,16 @@ gulp.task('clean', function(){
 gulp.task('watch', function() {
 
   browserSync.init({
-    files: ['../**/*.php', '../*.php', '../templates/**/*.twig', '../templates/*.twig'],
     proxy: config.browsersyncUrl,
     snippetOptions: {
       whitelist: ['/wp-admin/admin-ajax.php'],
       blacklist: ['/wp-admin/**']
-    },
-    "watchOptions": {
-      usePolling: enabled.polling
     }
   });
 
+  gulp.watch(['../**/*.php', '../templates/**/*.twig' ]).on('change', function () {
+    browserSync.reload();
+  });
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
