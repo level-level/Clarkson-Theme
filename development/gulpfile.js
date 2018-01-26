@@ -68,7 +68,9 @@ var enabled = {
   // Disable source maps when `--production`
   maps: !argv.production,
   // Fail styles task on error when `--production`
-  failStyleTask: argv.production
+  failStyleTask: argv.production,
+  // Enable polling
+  polling: argv.polling,
 };
 
 // Error checking; produce an error rather than crashing.
@@ -257,7 +259,7 @@ gulp.task('watch', function() {
       blacklist: ['/wp-admin/**']
     },
     "watchOptions": {
-      usePolling: true
+      usePolling: enabled.polling
     }
   });
 
