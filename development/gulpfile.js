@@ -71,6 +71,12 @@ var enabled = {
   failStyleTask: argv.production
 };
 
+// Error checking; produce an error rather than crashing.
+var onError = function(err) {
+  console.log(err.toString());
+  this.emit('end');
+};
+
 // ## Reusable Pipelines
 // See https://github.com/OverZealous/lazypipe
 
@@ -129,9 +135,7 @@ var jsTasks = function(filename) {
     })();
 };
 
-// ### Write to rev manifest
-// If there are any revved files then write them to the rev manifest.
-// See https://github.com/sindresorhus/gulp-rev
+// ### Write to destination
 var writeToDestination = function(directory) {
 
   return lazypipe()
@@ -157,6 +161,7 @@ gulp.task('styles', function() {
       });
     }
     merged.add(gulp.src(dep.globs, {base: 'styles'})
+      .pipe(plumber({errorHandler: onError}))
       .pipe(cssTasksInstance));
   });
   return merged
@@ -171,6 +176,7 @@ gulp.task('scripts', ['jshint'], function() {
   globs.js.forEach(function(dep) {
     merged.add(
       gulp.src(dep.globs, {base: 'scripts'})
+        .pipe(plumber({errorHandler: onError}))
         .pipe(jsTasks(dep.name))
     );
   });
