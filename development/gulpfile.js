@@ -17,7 +17,7 @@ var plumber      = require('gulp-plumber');
 var runSequence  = require('run-sequence');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
-var fs = require('fs');
+var fs           = require('fs');
 
 
 var manifest = require('../source/manifest.json');
