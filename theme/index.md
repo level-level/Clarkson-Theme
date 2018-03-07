@@ -10,7 +10,7 @@ hero-header: "Clarkson Theme is a modern set of tools to take WordPress theme de
 ---
 
 ## Twig based starter theme
-Thanks to [Clarkson Core](http://wp-clarkson.com/core){:target="_blank"}.
+Thanks to [Clarkson Core](http://wp-clarkson.com/core).
 
 ## Clean theme folder
 We try to keep the theme folder as clean as possible by:  
