@@ -21,7 +21,7 @@ There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
 ## Install via Composer
 {:id="composer"}
 
-Clarkson is available on [Packagist](https://packagist.org/packages/level-level/).
+Clarkson is available on [Packagist](https://packagist.org/packages/level-level/){:target="_blank"}.
 
 1\. Require `composer/installers`
 ```bash
