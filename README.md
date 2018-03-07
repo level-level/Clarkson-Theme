@@ -14,11 +14,12 @@ If you would like to read about the documentation, just check out the [Clarkson]
 
 ### Required
 - Clarkson Core [(A WordPress Twig plugin)](http://wp-clarkson.com/core)
+- Clarkson Hooks for [WordPress Hooks and Autoloading Namespaced Classes](https://github.com/level-level/clarkson-hooks) which is already included in Clarkson Theme.
 
 ### Optional
 Although you don't need to use these parts, it makes the developement proces a bit smoother.
 
-- Clarkson Hooks [WordPress Hooks and Autoloading Namespaced Classes](https://github.com/level-level/clarkson-hooks)
+
 - Composer
 - NPM
 - Gulp
