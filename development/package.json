@@ -52,7 +52,5 @@
     "run-sequence": "^1.2.2",
     "traverse": "^0.6.6"
   },
-  "dependencies": {
-    "jquery": "^1.12"
-  }
+  "dependencies": {}
 }
