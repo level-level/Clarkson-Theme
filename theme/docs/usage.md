@@ -3,28 +3,12 @@ layout: docs
 title: Documentation
 type: theme
 ---
-# Usage
+# Tool usage
 
-## Available gulp commands
-* `gulp` - Compile and optimize the files in your asset directory.
-* `gulp watch` - Compile assets when file changes are made.
-* `gulp --production` - Compile assets for production (no source maps).
+We try to limit all the moving part as much as possible. You're not required to use any of these tools and just code
+ in vanilla CSS, but at one point in your development process they come in handy. Visit one of the dedicated documentation
+  pages below:
 
-## Using BrowserSync
-To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `source/manifest.json` to reflect your local development hostname.
-
-For example, if your local development URL is `http://project-name.dev` you would update the file to read:
-
-    ...
-    "config": {
-        "devUrl": "http://project-name.dev"
-    }
-    ...
-
-If your local development URL looks like `http://localhost:8888/project-name` you would update the file to read:
-
-    ...
-    "config": {
-        "devUrl": "http://localhost:8888/project-name/"
-    }
-    ...
+- [Gulp](/theme/docs/usage-gulp.html)
+- [BrowserSync](/theme/docs/usage-browsersync.html)
+- [NPM](/theme/docs/usage-npm.html)
