@@ -78,6 +78,6 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
 If you have a different development url from the rest of your team then create a file `source/browsersync.json` with the following config:
 ```
 {
-    "url": "http://local.wordpress.dev"
+    "url": "http://local.wordpress.example"
 }
 ```
