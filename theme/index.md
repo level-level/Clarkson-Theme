@@ -10,7 +10,7 @@ hero-header: "Clarkson Theme is a modern set of tools to take WordPress theme de
 ---
 
 ## Twig based starter theme
-Thanks to [Clarkson Core](http://wp-clarkson.com/core).
+Thanks to [Clarkson Core](http://wp-clarkson.com/core){:target="_blank"}.
 
 ## Clean theme folder
 We try to keep the theme folder as clean as possible by:  
@@ -21,7 +21,7 @@ No need for extra `single.php` files.
 - Centralize all tooling code in one `development` folder.
 
 ## Be free of CSS Frameworks
-We didn't want to include something like Bootstrap or another Framework.
+We didn't want to include something like Bootstrap or another CSS Framework.
 
 ## Gulp
 Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates and minifies files.
@@ -29,14 +29,9 @@ Gulp compiles Less, checks for JavaScript errors, optimizes images, concatenates
 ## BrowserSync
 Keeping multiple browsers and devices synchronized, along with injecting updated CSS and JS in your browser.
 
-## Bower
+## NPM as Front-end package management
 Front-end package management that just installs the right versions of the packages you need and their dependencies. *
+Since NPM 5.0 a `package.lock` is supported so we don't need Yarn for this.
 
-Currently Roots Sage 9.0 theme already uses an `npm` and Yarn only setup, but it's up to you to swap this out. Our next `0.3.0` release will drop Bower for a NPM 5.0 only package installation because that version supports a `.lock` file.
 
-## asset-builder
-For the JSON file based asset pipeline. *
-
-  
-
-> \* Yupp, we borrowed the Gulp file of Roots Sage. Thank you! Just go to the `development` folder where all the tooling files are.
+> \* Yupp, we borrowed the Gulp file of Roots Sage 8.5. Thank you! Just go to the `development` folder where all the tooling files are.
