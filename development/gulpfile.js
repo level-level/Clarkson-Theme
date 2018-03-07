@@ -69,8 +69,8 @@ var enabled = {
   maps: !argv.production,
   // Fail styles task on error when `--production`
   failStyleTask: argv.production,
-  // Enable polling
-  polling: argv.polling,
+  // Enable image optimalisation when `--production`
+  imageOptim: argv.production
 };
 
 // Error checking; produce an error rather than crashing.
@@ -211,14 +211,16 @@ gulp.task('fonts', function() {
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
   return gulp.src(globs.images)
-    // .pipe(imagemin([
-    //   imagemin.jpegtran({progressive: true}),
-    //   imagemin.gifsicle({interlaced: true}),
-    //   imagemin.svgo({plugins: [
-    //     {removeUnknownsAndDefaults: false},
-    //     {cleanupIDs: false}
-    //   ]})
-    // ]))
+    .pipe( gulpif(enabled.imageOptim,
+      imagemin([
+        imagemin.jpegtran({progressive: true}),
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.svgo({plugins: [
+          {removeUnknownsAndDefaults: false},
+          {cleanupIDs: false}
+        ]})
+      ])
+    ))
     .pipe(gulp.dest(path.dist + 'images'))
     .pipe(browserSync.stream());
 });
