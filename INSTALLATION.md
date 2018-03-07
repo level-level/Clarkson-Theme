@@ -8,7 +8,7 @@ Clarkson Theme is a modern set of tools to take WordPress theme developement bac
 | --------------- | ------------ | ------------- |
 | PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
 | Node.js 5.0.x   | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| Clarkson Core 2.x  |              | [github.com](https://github.com/level-level/Clarkson-Core) |
+| Clarkson Core 0.2.x  |              | [github.com](https://github.com/level-level/Clarkson-Core) |
 
 ## Whats does What?
 
