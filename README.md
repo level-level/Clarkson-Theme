@@ -1,9 +1,9 @@
 # Clarkson
 
-Clarkson Theme is a modern set of tools to take WordPress theme developement back to 21st century without loosing touch with WordPress. It uses Clarkson Core to integrate Twig as the prefered templating engine.
+Clarkson Theme is a modern set of tools to take WordPress theme development back to 21st century without loosing touch with WordPress. It uses Clarkson Core to integrate Twig as the preferred templating engine.
 
 ## Documentation
-If you would like to read about the documentation, just check out the [Clarkson](wp-clarkson.com/theme/docs) website. 
+If you would like to read about the documentation, just check out the [Clarkson](http://wp-clarkson.com/theme/docs) website. 
 
 ## Installation
 - Installation guide [wp-clarkson.com/theme/docs](http://wp-clarkson.com/theme/docs).
@@ -18,7 +18,7 @@ If you would like to read about the documentation, just check out the [Clarkson]
 - Clarkson Hooks for [WordPress Hooks and Autoloading Namespaced Classes](https://github.com/level-level/clarkson-hooks) which is already included in Clarkson Theme.
 
 ### Optional
-Although you don't need to use these parts, it makes the developement proces a bit smoother.
+Although you don't need to use these parts, it makes the development process a bit smoother.
 
 - Composer
 - NPM
