@@ -1,5 +1,9 @@
-function options () {
-    $(".drag-target").remove();
+(function($) {
+    all();
+    init_toc();
+})(jQuery); // Fully reference jQuery after this point.
+function all () {
+//    $(".drag-target").remove();
     var parts = window.location.pathname.split( '/' );
     var type = parts[1];
     if (type !== undefined && type != "") {
@@ -39,96 +43,13 @@ function options () {
         });
     }
 }
-(function($) {
-    'use strict';
-    options();
-    var $body = $('html, body'),
-        content = $('#main').smoothState({
-            prefetch: true,
-            pageCacheSize: 4,
-            development: true,
-            // Runs when a link has been clicked
-            onClick: function(event){
-                var $anchor = event.currentTarget;
-                var pt = $($anchor).data('pt');
-                var $ct = $(".clarkson-theme-cover");
-                var $cc = $(".clarkson-core-cover");
-                var $at = $(".icon-arrow-theme");
-                var $ac = $(".icon-arrow-core");
-
-                if (pt) {
-                    switch (pt) {
-                        case "theme-cover-home":
-                            $ct.addClass("half-to-full-cover");
-                            $cc.addClass("half-to-min-cover");
-                            break;
-
-                        case "core-cover-home":
-                            $cc.addClass("half-to-full-cover");
-                            $ct.addClass("half-to-min-cover");
-                            break;
-
-                        case "core-cover-min":
-                            $cc.addClass("min-to-half-cover");
-                            $ct.addClass("full-to-half-cover");
-                            $ac.addClass("exit-fadeout");
-                            break;
-
-                        case "theme-cover-min":
-                            $ct.addClass("min-to-half-cover");
-                            $cc.addClass("full-to-half-cover");
-                            $at.addClass("exit-fadeout");
-                            break;
-
-                        case "mobile-cover-toggle":
-                            if ($ct.hasClass("minified")) {
-                                $cc.addClass("full-to-half-cover");
-                                $ct.addClass("min-to-half-cover");
-                            } else {
-                                $ct.addClass("full-to-half-cover");
-                                $cc.addClass("min-to-half-cover");
-                            }
-                            break;
-                    }
-                }
-            },
-            // Runs when a link has been activated
-            onStart: {
-                duration: 250,
-                render: function (url, $container) {
-                    // toggleAnimationClass() is a public method
-                    // for restarting css animations with a class
-                    content.toggleAnimationClass('is-exiting');
-                    // Scroll user to the top
-                    $body.animate({
-                        scrollTop: 0
-                    });
-                }
-            },
-            /** Run when requested content is ready to be injected into the page  */
-            onEnd : {
-                duration: 0,
-                render: function (url, $container, $content) {
-                    $body.css('cursor', 'auto');
-                    $body.find('a').css('cursor', 'auto');
-                    $container.html($content);
-                    options();
-                    init_toc();
-                }
-            }
-
-        }).data('smoothState');
-    function init_toc(){
-        $('.toc').toc({
-            'selectors': 'h2', //elements to use as headings
-            'container': '.content-text', //element to find all selectors in
-            'smoothScrolling': true, //enable or disable smooth scrolling on click
-            'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
-                return 'menu-item';
-            }
-        });
-    }
-
-    init_toc();
-
-})(jQuery);
+function init_toc(){
+    $('.toc').toc({
+        'selectors': 'h2', //elements to use as headings
+        'container': '.content-text', //element to find all selectors in
+        'smoothScrolling': true, //enable or disable smooth scrolling on click
+        'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+            return 'menu-item';
+        }
+    });
+}
