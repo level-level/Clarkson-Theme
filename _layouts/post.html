@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="row">
+	<div class="col s12 m10 l8 offset-m1 offset-l2">
+		<br /><a href="/blog">Back to blog</a>
+		<article>
+			<div class="post-header">
+				<h1>{{ page.title }}</h1>
+				<span>by <a href="http://github.com/{{page.authorUsername}}">{{ page.author }}</a>, on {{ page.date | date_to_string }}</span>
+			</div>
+			<br />
+
+			<div class="post-content">
+				{{ content }}
+			</div>
+		</article>
+	</div>
+</div>
+
+{% include scripts.html %}
+</body>
+</html>

@@ -7,6 +7,8 @@ url: "http://level-level.github.io" # the base hostname & protocol for your site
 twitter_username: levellevel
 github_username:  level-level
 
+gems:
+  - jekyll-paginate
 plugins:
   - jekyll-sitemap
 
@@ -16,7 +18,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-#permalink: /news/:title/
+permalink: /blog/:title.html
+paginate: 10
+paginate_path: /blog/page:num
 
 collections:
   theme:
