@@ -93,6 +93,9 @@ code {
 
 // Table of Contents on Home
 .menu-toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-top: 0;
 }
 .menu-item {

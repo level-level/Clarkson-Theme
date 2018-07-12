@@ -61,7 +61,7 @@ function doc_toc(){
     });
 
     if( li ){
-        $active.after('<ul class="children">' + li + '</ul>');
+        $active.after('<ul class="unstyled children">' + li + '</ul>');
     }
     console.log( $active, li );
 
