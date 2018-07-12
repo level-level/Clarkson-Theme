@@ -60,4 +60,33 @@ $company = new ll_company( $post );
 $company_catergories = $company->get_terms('ll-company-category');
 ~~~
 
+## Template objects <small><ins>Since 0.3.0</ins></small>
 
+When using a custom template Clarkson Core automaticly loads a corresponding custom WordPress Object. So if your template is called `template-headquarter.twig` then within it will load `wordpress-objects/template_headquarter.php` into the `object` variable instead of the default Clarkson Object.
+
+~~~
+class template_headquarter extends Clarkson_Object {
+}
+~~~
+
+## User role base objects <small><ins>Since 0.3.0</ins></small>
+When Clarkson retreives a User object, it will check if there is a custom WordPress Object available based on the current `user_role` of the current User.
+So if you are logged in as an Administrator it will use the `wordpress-objects/user_administrator.php` class when calling `object->get_author();`.
+
+~~~
+class user_administrator extends Clarkson_User {
+}
+~~~
+
+## Loading order
+The loading order of which object Class Clarkson will use is as following, where a higher number will overrule a lower number.
+
+Custom Post Types:
+1. Default `Clarkson_Object`.
+2. Custom `wordpress-object/page.php` or an other Custom Post Type.
+3. Custom `wordpress-object/template_headquarter.php`.
+
+
+Users:
+1. Default `User_Object`.
+2. Custom `wordpress-object/user_administrator.php` or an other User role name.
