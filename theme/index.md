@@ -5,7 +5,7 @@ pagetitle: Clarkson Theme
 color: green
 type: theme
 
-hero-header: "Clarkson Theme is a modern set of tools to take WordPress theme development back to 21st century without losing touch with WordPress." 
+hero-header: "Clarkson Theme is a starter theme with modern tools to bring you up to speed with your development." 
 
 ---
 
