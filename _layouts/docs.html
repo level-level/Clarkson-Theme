@@ -5,15 +5,18 @@ layout: default
     <div class="col s12 m3">
         <ul class="collection docs">
             {% for item in site.data.docs[page.type] %}
-            <li>
-                <a href="{{site.baseurl}}/{{page.type}}/docs/{{item.docname}}.html" class="collection-item">
+            <li class="collection-item-li">
+                <!-- hack to get last part of current page.url ;) -->
+                {% assign urlParts = page.url | split: "/" %}
+                {% assign current = urlParts.last %}
+                <a href="{{site.baseurl}}/{{page.type}}/docs/{{item.docname}}.html" class="collection-item {% if current == item.docname %}active{% endif %} ">
                     {{item.title}}
                 </a>
             </li>
             {% endfor %}
         </ul>
     </div>
-    <div class="col s12 m9 content-text flow-text">
+    <div class="col s12 m9 main">
         {{content}}
     </div>
 </div>
