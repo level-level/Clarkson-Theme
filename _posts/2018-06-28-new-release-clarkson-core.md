@@ -37,5 +37,6 @@ class user_administrator extends Clarkson_User {
 - Custom template object [#101](https://github.com/level-level/Clarkson-Core/issues/101).
 - Don't use deprecated object creation internaly in Clarkson Core [#91](https://github.com/level-level/Clarkson-Core/issues/92).
 - Return proper custom Term Object when custom taxonomy is defined with dashes [#109](https://github.com/level-level/Clarkson-Core/issues/109).
+- Allows the theme to override object creation [#131](https://github.com/level-level/Clarkson-Core/issues/131).
 
 See all the closed issues on Github [consult the list of changes](https://github.com/level-level/Clarkson-Core/milestone/4).
