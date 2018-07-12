@@ -29,6 +29,9 @@ class user_administrator extends Clarkson_User {
 }
 ~~~
 
+## Coding Standards
+Further more, Rian Rietveld checked and corrected the whole plugin to comply with the WordPress Coding Standards!
+
 ## Bugfixes
 
 - You can now load a custom user object from a child-them. [#106](https://github.com/level-level/Clarkson-Core/issues/106).
