@@ -4,15 +4,17 @@ title: Upgrading
 type: core
 ---
 
-Alle release can be found on [GitHub](https://github.com/level-level/Clarkson-Core/releases)
+# Information about upgrading
 
-# Upgrading from 0.2.0 to 0.2.1
+All releases can be found on [GitHub](https://github.com/level-level/Clarkson-Core/releases).
+
+## Upgrading from 0.2.0 to 0.2.1
 In this version, a more generic custom template functionality has been introduced. This deprecated the `page-xyz.twig` for `template-xyz.twig`. More information about this new template feature can be found [here](http://wp-clarkson.com/core/docs/templates.html#custom-templates).
 
 [View release notes on GitHub](https://github.com/level-level/Clarkson-Core/releases/tag/0.2.1){:.btn }{:target="_blank"}
 
 
-# Upgrading from 0.1.0 to 0.2.0
+## Upgrading from 0.1.0 to 0.2.0
 
 Important note when upgrading to 0.2.0
 
