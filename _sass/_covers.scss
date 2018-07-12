@@ -1,8 +1,11 @@
+.covers {
+  overflow: hidden;
+}
 .cover {
-  position: fixed;
-  width: 100%;
-  height: 50%;
-  overflow: visible;
+  width: 80%;
+  margin: 0 auto $gutter-width auto;
+
+
   opacity: 1;
   white-space: nowrap;
   z-index: 2;
@@ -10,15 +13,9 @@
   text-align: center;
 
   /* Flexbox options */
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include flexbox();
+  @include justify-content( center );
+  @include align( center );
 
   &:active,
   &:hover,
@@ -27,49 +24,19 @@
     color: $off-black;
   }
 
-  &.animate {
-    transition: height .5s, opacity .5s;
-  }
-
-  &.clarkson-core-cover {
-    bottom: 0;
-  }
-
-  &.full {
-    height: 100%;
-    opacity: 0;
-    z-index: -1;
-  }
-
-  &.minified {
-    height: 0;
-
-    .cover-content {
-      display: none;
-    }
-
-    .cover-arrow {
-      display: block;
-    }
-  }
-
-  &.background {
-    z-index: -1;
-  }
-
-  .cover-arrow {
-    display: none;
-    font-size: 100px;
-    color: rgba(255, 255, 255, 0.7);
-    transition: font-size .5s, color .5s;
-  }
 
   .cover-content {
+    padding-top: 107px;
+    position: relative;
     h2 {
       color: white;
     }
 
-    .cover-icon {
+    .project-icon {
+      position: absolute;
+      top: $gutter-width;
+      left: 0;
+      right: 0;
       display: block;
       font-size: 100px;
       color: white;
@@ -82,12 +49,8 @@
       padding: 0;
 
       /* Flexbox options */
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
+      @include flexbox();
+      @include justify-content( space-around );
 
       .tag {
         color: rgba(255,255,255, 0.7);
@@ -100,8 +63,8 @@
   &:hover {
     cursor: pointer;
     .cover-content {
-      .cover-icon {
-        font-size: 110px;
+      .project-icon {
+        font-size: 105px;
       }
     }
 
@@ -112,44 +75,15 @@
   }
 }
 
-.clarkson-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 1;
-
-  &.animate {
-    transition: opacity 0.5s;
-  }
-
-  &.hidden {
-    opacity: 0;
-  }
-}
 
 @media #{$medium-and-up} {
-  .cover {
-    width: 50%;
-    height: 100%;
-
-    &.animate {
-      transition: width .5s, opacity .5s;
-    }
-
-    &.clarkson-core-cover {
-      right: 0;
-      bottom: auto;
-    }
-
-    &.full {
-      width: 97%;
-      height: 100%;
-    }
-
-    &.minified {
-      width: 3%;
-      height: 100%;
-    }
+  .covers {
+    @include flexbox();
+    @include justify-content( center );
+    @include align( space-around );
   }
-
+  .cover {
+    width: 45%;
+    max-width: 350px;
+  }
 }

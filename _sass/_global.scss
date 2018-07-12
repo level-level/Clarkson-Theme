@@ -438,13 +438,20 @@ td, th{
   border-radius: 2px;
   overflow: hidden;
   position: relative;
+  font-size: 0.9rem;
+
+  > li {
+    border-top: 1px solid $collection-border-color;
+  }
+  > li:first-child {
+    border-top: none;
+  }
 
   .collection-item {
     //background-color: $collection-bg-color;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
-    border-bottom: 1px solid $collection-border-color;
 
     // Avatar Collection
     &.avatar {

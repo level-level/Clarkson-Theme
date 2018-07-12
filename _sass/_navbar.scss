@@ -1,12 +1,49 @@
 nav {
   color: $navbar-font-color;
-  background-color: $primary-color;
   width: 100%;
+  z-index: 1;
+
+  a { color: $off-black; }
+
+  // Navbar Links
+  ul {
+    margin: 0;
+
+    li {
+      @include transition(background-color .3s);
+      float: left;
+      padding: 0;
+
+      &:hover, &.active {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    a {
+      font-size: 15px;
+      font-weight: 300;
+      color: $navbar-font-color;
+      display: block;
+      padding: 0 15px;
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+.nav-main {
+
+  background-color: #333;
+
   height: $navbar-height-mobile;
   line-height: $navbar-height-mobile;
   z-index: 1;
 
-  a { color: $off-black; }
 
   .nav-wrapper {
     position: relative;
@@ -89,27 +126,13 @@ nav {
 
   // Navbar Links
   ul {
-    margin: 0;
 
     li {
       @include transition(background-color .3s);
-      float: left;
-      padding: 0;
 
       &:hover, &.active {
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(0,0,0,.5);
       }
-    }
-    a {
-      font-size: 15px;
-      font-weight: 300;
-      color: $navbar-font-color;
-      display: block;
-      padding: 0 15px;
-    }
-
-    &.left {
-      float: left;
     }
   }
 
@@ -154,11 +177,62 @@ nav {
   z-index: 998;
 }
 @media #{$medium-and-up} {
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  .nav-main, .nav-main .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: $navbar-height;
     line-height: $navbar-height;
   }
   .navbar-fixed {
     height: $navbar-height;
+  }
+}
+
+
+.nav-project {
+  padding: 10px 0 0 0;
+  overflow: hidden;
+
+  .brand-project {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    // top: 9px;
+    // position: relative;
+  }
+
+  a {
+    color: $navbar-font-color;
+  }
+
+  // nav
+  ul a {
+    padding: 20px 15px;
+  }
+
+  .icon {
+    fill: $navbar-font-color;
+    display: inline;
+    width: 0.8rem;
+    max-height: 0.8rem;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+  }
+
+  @media #{$medium-and-up} {
+    padding-top: 0;
+    .brand-project {
+      display: inline-block;
+
+      @include flexbox();
+      float: left;
+
+      position: relative;
+      top: 11px;
+
+      
+    }
+    .nav {
+      float: right;
+    }
   }
 }

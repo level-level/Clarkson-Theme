@@ -1,27 +1,25 @@
-<nav class="{{page.type}}">
-    <div class="nav-wrapper">
-        <div class="row">
-            <div class="col s12 m10 l8 offset-m1 offset-l2">
-                <a href="{{site.baseurl}}/{{page.type}}/" class="brand-logo">{{site.global.pagetitle[page.type]}}</a>
-                <a href="/{{site.baseurl}}" class="hide-on-med-and-up right" data-pt="mobile-cover-toggle"><i class="material-icons clarkson-toggle">home</i></a>
-                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-small-only j-nav">
-                    <li><a href="{{site.baseurl}}/{{page.type}}/">Home</a></li>
-                    <li><a href="{{site.baseurl}}/{{page.type}}/docs">Documentation</a></li>
-                    <li><a href="{{site.global.github[page.type]}}">GitHub</a></li>
-                    <li><a href="{{site.baseurl}}/{{page.type}}/support">Support</a></li>
-                </ul>
+<nav class="nav-main">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12 m10 l8 offset-m1 offset-l2">
+                    <a href="{{site.baseurl}}/" class="brand-logo">WP Clarkson</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-small-only j-nav">
+                        <li><a href="{{site.baseurl}}/">Home</a></li>
+                        <li><a href="{{site.baseurl}}/blog/">Blog</a></li>
+                        <li><a href="{{site.baseurl}}/core/">Core</a></li>
+                        <li><a href="{{site.baseurl}}/theme/">Theme</a></li>
+                    </ul>
+                </div>
             </div>
+            <ul class="side-nav hide-on-med-and-up j-nav" id="mobile-nav">
+                <li class="clarkson-title">
+                    WP Clarkson
+                </li>
+                <li><a href="{{site.baseurl}}/">Home</a></li>
+                        <li><a href="{{site.baseurl}}/blog/">Blog</a></li>
+                        <li><a href="{{site.baseurl}}/core/">Core</a></li>
+                        <li><a href="{{site.baseurl}}/theme/">Theme</a></li>
+            </ul>
         </div>
-        <ul class="side-nav hide-on-med-and-up j-nav" id="mobile-nav">
-            <li class="icon-{{page.type}}-icon sidenav-icon {{page.type}}-text"></li>
-            <li class="clarkson-title">
-                <span class="{{page.type}}-text">{{site.global.pagetitle[page.type]}}</span>
-            </li>
-            <li><a href="{{site.baseurl}}/{{page.type}}/">Home</a></li>
-            <li><a href="{{site.baseurl}}/{{page.type}}/docs">Documentation</a></li>
-            <li><a href="{{site.global.github[page.type]}}">GitHub</a></li>
-            <li><a href="{{site.baseurl}}/{{page.type}}/support">Support</a></li>
-        </ul>
-    </div>
-</nav>
+    </nav>
