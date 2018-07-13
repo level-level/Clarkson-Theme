@@ -11,14 +11,13 @@ twitter:
   username: levellevel
   card: summary
 
-gems:
- - jekyll-paginate
 github:
   username: level-level
 
 plugins:
- - jekyll-sitemap
- - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - readme.md
