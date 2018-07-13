@@ -6,26 +6,24 @@
 function all () {
     /**
      * Navigation bar highlighting
-     * This doesn't take account for the third level in /core/docs/template.html
      */
 
+     // Hightlight current url in menu.
     $(".j-nav li a").each(function() {
         var $href = $(this).attr("href");
-
         //console.log(window.location.pathname, window.location.hostname, $href );
-
         if ( window.location.pathname === $href )  {
             $(this).parent().addClass("active");
-
-            // find the base of the current href to also select it's parent
-            $parts = $href.split("/");
-            if( $parts.length ){
-                $parent = '/' + $parts[1] + '/';
-                $( '.nav-main .j-nav li a[href="' + $parent + '"]').parent().addClass('active');
-            }
         }
-
     });
+
+
+    // find the base of the current page and highlight it.
+    $parts = window.location.pathname.split("/");
+    if( $parts.length ){
+        $parent = '/' + $parts[1] + '/';
+        $( '.nav-main .j-nav li a[href="' + $parent + '"]').parent().addClass('active');
+    }
 
     /*
         Activate sideNav for mobile
@@ -63,6 +61,5 @@ function doc_toc(){
     if( li ){
         $active.after('<ul class="unstyled children">' + li + '</ul>');
     }
-    console.log( $active, li );
 
 }
