@@ -1,11 +1,11 @@
 ---
-layout: home
+layout: project-frontpage
 title: Clarkson Theme
 pagetitle: Clarkson Theme
 color: green
 type: theme
 
-hero-header: "Clarkson Theme is a starter theme with modern tools to bring you up to speed with your development." 
+hero-header: "Clarkson Theme is a starter theme with modern tools to bring you up to speed with your development."
 
 ---
 

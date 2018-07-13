@@ -1,9 +1,9 @@
 ---
-layout: docs
+layout: project-docs
 title: Documentation
 type: core
 ---
-# Twig templating  
+# Twig templating
 
 ## Template Hierarchy
 Uses the internal [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/){:target="_blank"}

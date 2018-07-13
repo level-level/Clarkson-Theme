@@ -1,9 +1,9 @@
 ---
-layout: docs
+layout: project-docs
 title: Documentation
 type: core
 ---
-# Custom objects  
+# Custom objects
 
 ## Autoloader
 Clarkson Core autoloads all registered Custom Post Types and Taxonomies from the `wordpress-objects` directory within your active theme. 

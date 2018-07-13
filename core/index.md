@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: project-frontpage
 title: Clarkson Core
 pagetitle: Clarkson Core
 type: core

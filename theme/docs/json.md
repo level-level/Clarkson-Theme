@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: project-docs
 title: JSON endpoint
 type: theme
 ---

@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: project-docs
 title: WordPress objects - Documentation
 type: core
 ---
