@@ -7,7 +7,8 @@ author: Jaime Martínez
 authorUsername: jmslbam
 ---
 
-Yes, Clarkson Core 0.3.0 has been released! 0.3.0 contains new functionality and some small bugfixes.
+Yes, Clarkson Core 0.3.0 has been released! 0.3.0 contains new functionality and some small bug fixes. It also has been completely checked with the WordPress PHP Coding Standards!
+
 These are the two new features that landed in this release:
 
 ## Custom Template Objects
