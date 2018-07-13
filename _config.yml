@@ -4,15 +4,17 @@ email: support@level-level.com
 description: WP Clarkson is a WordPress Twig plugin and starter theme.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://wp-clarkson.com" # the base hostname & protocol for your site
-twitter_username: levellevel
-github_username:  level-level
 
+author:
+  twitter: levellevel
 twitter:
   username: levellevel
   card: summary
 
 gems:
  - jekyll-paginate
+github:
+  username: level-level
 
 plugins:
  - jekyll-sitemap
