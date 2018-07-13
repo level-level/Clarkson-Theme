@@ -5,7 +5,7 @@ date:   2018-07-12 12:00:00 -0000
 categories: core releases
 author: Jaime Martínez
 authorUsername: jmslbam
-image: clarkson_0_3_0.jpg 
+image: /images/post-thumbnails/clarkson_0_3_0.jpg 
 ---
 
 

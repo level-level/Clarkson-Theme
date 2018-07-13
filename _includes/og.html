@@ -1,0 +1,11 @@
+{% if page.categories %}
+    {% for tag in page.categories %}
+  		<meta property="article:tag" content="{{tag}}" />
+  	{% endfor %}
+    <meta name="keywords" content="{{ page.categories | join: ', ' }}" />
+{% endif %}
+
+{% if page.image %}
+    <meta property="og:image" content="{{ page.image }}" />
+    <meta name="twitter:image" content="{{ page.image }}" />
+{% endif %}
