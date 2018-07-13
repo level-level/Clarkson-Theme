@@ -1,9 +1,5 @@
 ---
 layout: frontpage
-title: Clarkson | WordPress missing theming layer
-pagetitle: WP Clarkson
-
-
 ---
 
 Cordaid - https://www.cordaid.org/nl/

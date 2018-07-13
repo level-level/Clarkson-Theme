@@ -1,7 +1,7 @@
 # Site settings
-title: WP Clarkson
+title: WP Clarkson - The missing theming layer
 email: support@level-level.com
-description: WP Clarkson is a WordPress Twig plugin and starter theme.
+description: WP Clarkson is a WordPress Twig plugin and starter theme that acts as the missing theming layer.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://wp-clarkson.com" # the base hostname & protocol for your site
 
