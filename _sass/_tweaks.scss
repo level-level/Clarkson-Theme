@@ -118,10 +118,25 @@ code {
   margin-bottom: 1.5em;
 }
 
+
+img.post-thumbnail {
+  width: 100%;
+}
+
+
 /*
     MEDIA EXCEPTIONS
 */
 @media #{$medium-and-up} {
+
+  img.post-thumbnail {
+    float: left;
+    width: 35%;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .collection.docs {
     margin-top: 25px;
   }
