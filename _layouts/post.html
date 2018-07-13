@@ -16,7 +16,7 @@
 			<br />
 
 			<div class="post-content">
-				<img class="post-thumbnail" src="/images/post-thumbnails/{{page.image}}" alt="" /> {{ content }}
+				{% if page.image %}<img class="post-thumbnail" src="{{ page.image | prepend: site.url }}" alt="" /> {% endif %} {{ page.description }}{{ content }}
 			</div>
 		</article>
 	</div>

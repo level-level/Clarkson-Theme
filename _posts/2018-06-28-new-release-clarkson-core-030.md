@@ -1,16 +1,13 @@
 ---
 layout: post
 title:  "Clarkson Core 0.3.0 released"
+description: Yes, Clarkson Core 0.3.0 has been released! 0.3.0 contains new functionality and some small bug fixes. It also has been completely checked with the WordPress PHP Coding Standards!
 date:   2018-07-12 12:00:00 -0000
 categories: core releases
 author: Jaime Martínez
 authorUsername: jmslbam
 image: /images/post-thumbnails/clarkson_0_3_0.jpg 
 ---
-
-
-
-Yes, Clarkson Core 0.3.0 has been released! 0.3.0 contains new functionality and some small bug fixes. It also has been completely checked with the WordPress PHP Coding Standards!
 
 These are the two new features that landed in this release:
 

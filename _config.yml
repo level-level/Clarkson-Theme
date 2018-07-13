@@ -7,10 +7,16 @@ url: "http://wp-clarkson.com" # the base hostname & protocol for your site
 twitter_username: levellevel
 github_username:  level-level
 
+twitter:
+  username: levellevel
+  card: summary
+
 gems:
-  - jekyll-paginate
+ - jekyll-paginate
+
 plugins:
-  - jekyll-sitemap
+ - jekyll-sitemap
+ - jekyll-seo-tag
 
 exclude:
   - readme.md
