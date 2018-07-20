@@ -7,12 +7,11 @@ url: "http://wp-clarkson.com" # the base hostname & protocol for your site
 
 author:
   twitter: levellevel
+  website: https://level-level.com
+  github: level-level
 twitter:
   username: levellevel
   card: summary
-
-github:
-  username: level-level
 
 plugins:
   - jekyll-paginate
@@ -37,7 +36,7 @@ collections:
     output: true
     permalink: /core/docs/:path/
 
-global:
+projects:
   github:
     core: "https://github.com/level-level/Clarkson-Core"
     theme: "https://github.com/level-level/Clarkson-Theme"
