@@ -32,15 +32,10 @@ collections:
   theme:
     output: true
     permalink: /theme/docs/:path/
-    docs:
-      - docname: index
-        title: Installation
+
   core:
     output: true
     permalink: /core/docs/:path/
-    docs:
-      - docname: index
-        title: Installation
 
 projects:
   github:
