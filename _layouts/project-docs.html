@@ -4,7 +4,7 @@ layout: project-default
 <div class="row" id="docs">
     <div class="col s12 m4">
         <ul class="unstyled collection docs">
-            {% for item in site.data.docs[page.type] %}
+            {% for item in site.docs[page.type] %}
             <li class="collection-item-li">
                 <!-- hack to get last part of current page.url ;) -->
                 {% assign urlParts = page.url | split: "/" %}

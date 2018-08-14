@@ -38,6 +38,19 @@ code {
   background: #fff;
 }
 
+.code-label {
+  margin-bottom: 0;
+  background: color("grey", "darken-2");
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.code-label + div pre {
+  margin-top: 0;
+  border-radius: 0;
+}
+
 .hero-header {
   text-align: center;
   font-weight: 300;
@@ -125,7 +138,7 @@ code {
 .content-info {
   padding: 1em 0 0 0;
   margin: 0;
-  background: #1a1a1a;
+  background: #333;
   color: $navbar-font-color;
 
 }
@@ -167,6 +180,10 @@ code {
     color: #2f89c6;
   }
 
+  blockquote {
+    border-color: #2f89c6; 
+  }
+
 }
 
 .theme-accent {
@@ -175,6 +192,9 @@ code {
   }
   a:hover {
     color: #2ab866;
+  }
+  blockquote {
+    border-color: #00b76a;
   }
 }
 

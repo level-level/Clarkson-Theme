@@ -32,9 +32,15 @@ collections:
   theme:
     output: true
     permalink: /theme/docs/:path/
+    docs:
+      - docname: index
+        title: Installation
   core:
     output: true
     permalink: /core/docs/:path/
+    docs:
+      - docname: index
+        title: Installation
 
 projects:
   github:
@@ -43,3 +49,35 @@ projects:
   pagetitle:
     core: "Clarkson Core"
     theme: "Clarkson Theme"
+
+docs:
+  core:
+    - docname: index
+      title: Installation
+    - docname: templates
+      title: Twig Templates
+    - docname: wordpress-objects
+      title: WordPress objects
+    - docname: adding-objects
+      title: Adding objects
+    - docname: custom-objects
+      title: Custom Objects
+    - docname: performance
+      title: Performance tips
+    - docname: upgrading
+      title: Upgrading
+  theme:
+    - docname: index
+      title: Installation
+    - docname: usage
+      title: Usage
+    - docname: usage-gulp
+      title: Gulp
+    - docname: usage-browsersync
+      title: BrowserSync
+    - docname: usage-npm
+      title: NPM
+    - docname: tips
+      title: Tips
+    - docname: json
+      title: JSON endpoint
