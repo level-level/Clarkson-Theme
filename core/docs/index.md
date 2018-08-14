@@ -8,7 +8,6 @@ There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
 
 * [Quick download](#download)
 * [Composer](#composer)
-* [Git clone](#git-clone)
 
 > Remember as with all Must Use plugins, you still need to [load Clarkson](#loading-clarkson-core-as-a-must-use-plugin)  yourself.
 
@@ -41,13 +40,6 @@ It's labeled as a `mu-plugin` so it will be installed there.
 
 If you want to learn more about using Composer with WordPress then please check out this website [http://composer.rarst.net](http://composer.rarst.net/){:target="_blank"} or [https://roots.io/bedrock/docs/composer/](https://roots.io/bedrock/docs/composer/){:target="_blank"}
 
-
-## Manual via a git clone
-{:id="git-clone"}
-
-1\. Clone the repository `git clone git@github.com:level-level/clarkson-core.git`  
-
-2\. Run `composer install` in the new `clarkson-core` directory.
 
 ## * Loading Clarkson-Core as a Must Use plugin
 {: id="loading"}
