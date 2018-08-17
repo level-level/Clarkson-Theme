@@ -1,10 +1,9 @@
 ---
 layout: project-docs
-title: Installation
-type: theme
+title: Background infomation
+type: docs
+project: theme
 ---
-# Installation
-
 Clarkson Theme is a modern set of tools to take WordPress theme developement back to 21st century without loosing touch with WordPress.
 
 ## Requirements
@@ -23,20 +22,3 @@ Clarkson Theme uses [Gulp](http://gulpjs.com/){:target="_blank"} as its build sy
 * [BrowserSync](http://www.browsersync.io/){:target="_blank"} for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
 * No Framework, roll your own!
 * [Twig Templating via Clarkson Core](http://twig.sensiolabs.org/){:target="_blank"}
-
-## Installation
-
-### Default
-Clone the repository or [download](https://github.com/level-level/Clarkson-Theme/archive/master.zip) the zip and rename it to your project's name.
-`git clone git@github.com:level-level/Clarkson-Theme.git`
-
-### Composer
-If you don't have a `vendor` directory in your theme then follow the next steps:
-1. Install [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx){:target="_blank"} / [short info](https://www.abeautifulsite.net/installing-composer-on-os-x){:target="_blank"}
-2. Run `composer install` in this theme folder.
-
-### Install Dependencies
-
-1. Run `npm install`
-
-You now have all the necessary dependencies to [run the build process via Gulp](/theme/docs/usage.html).

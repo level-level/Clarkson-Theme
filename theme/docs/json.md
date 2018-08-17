@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: JSON endpoint
-type: theme
+type: docs
+project: theme
 ---
 # JSON endpoint
 One can call the JSON endpoint `https://clarkson.example/post-name/json` for each post and get a json object returned instead of using the whole WP REST-API.  

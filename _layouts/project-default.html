@@ -1,8 +1,10 @@
 {% include head.html %}
-{% include navigation-project.html %}
+{% if page.project == 'core' or page.project == 'theme' %}
+    {% include navigation-project.html %}
+{% endif %}
 <div id="main">
     <div class="row">
-        <div class="col s12 m10 l8 offset-m1 offset-l2 {{page.type}}-accent">
+        <div class="col s12 m10 l8 offset-m1 offset-l2 {{page.project}}-accent">
             {{content}}
         </div>
     </div>

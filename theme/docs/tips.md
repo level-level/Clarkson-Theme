@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: Tips
-type: theme
+type: docs
+project: theme
 ---
 # Tips while using Clarkson
 

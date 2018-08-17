@@ -150,7 +150,7 @@ $interval-size: $range / $intervals !default;
 /*** Collections ***/
 $collection-border-color: #e0e0e0 !default;
 $collection-bg-color: #fff !default;
-$collection-active-bg-color: $secondary-color !default;
+$collection-active-bg-color: #eaeaea !default;
 $collection-active-color: lighten($secondary-color, 55%) !default;
 $collection-hover-bg-color: #ddd !default;
 

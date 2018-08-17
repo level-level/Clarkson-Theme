@@ -87,7 +87,19 @@ code {
   }
 }
 
+
+#menu-docs.sticky {
+  position: fixed;
+  top: 0;
+  //width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
 .collection.docs {
+  background: #e0e0e0;
   .collection-item {
     color: $off-black;
     font-weight: 500;

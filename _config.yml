@@ -1,5 +1,5 @@
 # Site settings
-title: WP Clarkson - The missing theming layer
+title: WP Clarkson - The missing theming layer for WordPress
 email: support@level-level.com
 description: WP Clarkson is a WordPress Twig plugin and starter theme that acts as the missing theming layer.
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -32,47 +32,6 @@ collections:
   theme:
     output: true
     permalink: /theme/docs/:path/
-
   core:
     output: true
     permalink: /core/docs/:path/
-
-projects:
-  github:
-    core: "https://github.com/level-level/Clarkson-Core"
-    theme: "https://github.com/level-level/Clarkson-Theme"
-  pagetitle:
-    core: "Clarkson Core"
-    theme: "Clarkson Theme"
-
-docs:
-  core:
-    - docname: index
-      title: Installation
-    - docname: templates
-      title: Twig Templates
-    - docname: wordpress-objects
-      title: WordPress objects
-    - docname: adding-objects
-      title: Adding objects
-    - docname: custom-objects
-      title: Custom Objects
-    - docname: performance
-      title: Performance tips
-    - docname: upgrading
-      title: Upgrading
-  theme:
-    - docname: index
-      title: Installation
-    - docname: usage
-      title: Usage
-    - docname: usage-gulp
-      title: Gulp
-    - docname: usage-browsersync
-      title: BrowserSync
-    - docname: usage-npm
-      title: NPM
-    - docname: tips
-      title: Tips
-    - docname: json
-      title: JSON endpoint

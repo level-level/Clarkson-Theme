@@ -1,23 +1,27 @@
 ---
 layout: project-docs
 title: Documentation
-type: core
+type: docs
+project: core
 ---
 # Installation
-There are 3 posiblities to install Clarkson Core into your `mu-plugins`.
+There are 2 posiblities to install Clarkson Core into your `mu-plugins`.
 
-* [Quick download](#download)
-* [Composer](#composer)
+* A. [Quick download](#download)
+* B. [Composer](#composer)
 
 > Remember as with all Must Use plugins, you still need to [load Clarkson](#loading-clarkson-core-as-a-must-use-plugin)  yourself.
+{: class="highlight"}
 
-## Quick download
+## A. Quick download
 {:id="download"}
 [Download](http://wp-clarkson.com/builds/zip/clarkson-core.zip){:.btn}{:target="_blank"}  &nbsp; the latest stable `.zip` and place it within your `mu-plugins` directory.
 
+Then [load Clarkson Core](#loading-clarkson-core-as-a-must-use-plugin) as `mu-plugin`.
+
 <!-- This package is build via "clarkson-theme/bin/build.sh" -->
 
-## Install via Composer
+## B. Install via Composer
 {:id="composer"}
 
 Clarkson is available on [Packagist](https://packagist.org/packages/level-level/){:target="_blank"}.

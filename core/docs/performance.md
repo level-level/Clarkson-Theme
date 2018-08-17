@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: Performance tips
-type: core
+type: docs
+project: core
 ---
 # Performance tips
 We all love websites that run fase, so here are some tips to keep in mind when building a website with Clarkson Core.

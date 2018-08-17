@@ -1,0 +1,14 @@
+- docname: index
+  title: Installation
+- docname: templates
+  title: Twig Templates
+- docname: wordpress-objects
+  title: WordPress objects
+- docname: adding-objects
+  title: Adding objects
+- docname: custom-objects
+  title: Custom Objects
+- docname: performance
+  title: Performance tips
+- docname: upgrading
+  title: Upgrading

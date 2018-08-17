@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: WordPress objects - Documentation
-type: core
+type: docs
+project: core
 ---
 # WordPress objects
 Clarkson ships with a set of PHP classes that represent the available WordPress data types:  

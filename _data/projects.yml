@@ -1,0 +1,6 @@
+core:
+  github: "https://github.com/level-level/Clarkson-Core"
+  pagetitle: "Clarkson Core"
+theme:
+  github: "https://github.com/level-level/Clarkson-Theme"
+  pagetitle: "Clarkson Theme"

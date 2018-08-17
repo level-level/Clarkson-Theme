@@ -1,7 +1,9 @@
 ---
 layout: project-docs
 title: Documentation
-type: core
+type: docs
+type: docs
+project: core
 ---
 # Twig templating
 

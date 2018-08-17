@@ -1,0 +1,16 @@
+- docname: index
+  title: Background information
+- docname: installation
+  title: Installation
+- docname: usage
+  title: Usage
+- docname: usage-gulp
+  title: Gulp
+- docname: usage-browsersync
+  title: BrowserSync
+- docname: usage-npm
+  title: NPM
+- docname: tips
+  title: Tips
+- docname: json
+  title: JSON endpoint

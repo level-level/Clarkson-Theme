@@ -91,6 +91,11 @@ blockquote {
   border-left: 5px solid $primary-color;
 }
 
+blockquote.highlight {
+  padding-top: 0.5rem;
+  padding-bottom: 0.01rem;
+}
+
 // Icon Styles
 
 i {
@@ -431,6 +436,8 @@ td, th{
 
 // Collections
 .collection {
+  background-color: $collection-active-bg-color;
+  
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border: 1px solid $collection-border-color;
   border-radius: 2px;
@@ -446,7 +453,6 @@ td, th{
   }
 
   .collection-item {
-    //background-color: $collection-bg-color;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;

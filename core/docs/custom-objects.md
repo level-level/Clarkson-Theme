@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: Documentation
-type: core
+type: docs
+project: core
 ---
 # Custom objects
 

@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: Upgrading
-type: core
+type: docs
+project: core
 ---
 
 # Information about upgrading

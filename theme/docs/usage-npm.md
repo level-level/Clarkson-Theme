@@ -1,7 +1,8 @@
 ---
 layout: project-docs
 title: Documentation
-type: theme
+type: docs
+project: theme
 ---
 # Using NPM
 
