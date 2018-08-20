@@ -9,7 +9,7 @@ type: guides
 
 For a quick setup <a href="//wp-clarkson.com/builds/zip/clarkson-core.zip">download the Clarkson Core</a> and install it as a mu-plugin.
 
-> As with all Must Use plugins in the `wp-content/mu-plugins/` directory one needs to load them manually or use a [mu-plugin autoloader](https://github.com/level-level/ll-plugin-autoloader/){:target="_blank"}.
+> As with all Must Use plugins in the `wp-content/mu-plugins/` directory one needs to load them manually or use a [mu-plugin autoloader](https://github.com/level-level/ll-plugin-autoloader/){:target="_blank"}. For now we load them manually by using the snippet below:
 
 ### wp-content/mu-plugins/load.php
 {: .code-label}
