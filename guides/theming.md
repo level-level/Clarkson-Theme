@@ -42,7 +42,7 @@ As you can see, we are missing the pagination here, so let's add it!
 
 Let's create a file `templates/partials/pagination.twig` and include it underneath the `{% raw %}{% endfor %}{% endraw %}` Twig tag.
 
-### templates/partials/pagination.twig
+### templates/index.twig
 {: .code-label}
 ~~~twig
 {% raw %}{% extends "layouts/2-column.twig" %}
@@ -51,6 +51,7 @@ Let's create a file `templates/partials/pagination.twig` and include it undernea
     {% for object in objects %}
         {% include 'partials/teaser.twig' %}
     {% endfor %}
+    <!-- Added pagination -->
     {% include 'partials/pagination.twig' %}
 {% endblock %}{% endraw %}
 ~~~
