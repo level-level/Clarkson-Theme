@@ -7,34 +7,34 @@ project: core
 # Custom objects
 
 ## Autoloader
-Clarkson Core autoloads all registered Custom Post Types and Taxonomies from the `wordpress-objects` directory within your active theme. 
+Clarkson Core autoloads all registered Custom Post Types, Taxonomies and Users from the `wordpress-objects` directory within your active theme. 
 
-Clarkon Core is _Child Theme_ compatible. So when your have a `post.php` in both your parent theme as your child theme, then the child theme class gets loaded instead of the parent one. 🎉 
- 
-_You can create a Base class which the Post class Extends from, but you should load this class by manually._
+Clarkon Core is _Child Theme_compatible. So when your have a `post.php` in both your parent theme as your child theme, then the child theme class gets loaded instead of the parent one. 🎉 
+
+You can create a Base class which the Post class Extends from, but you should load this class by manually._
 
 ## Custom Post Types
 It's possible to extend the Clarkson Object to your own Custom Post Type by creating classes that represent the Custom Post Types.  
 
-**1\. Register your CPT**  
-Just register your CPT like you always do via:  
+**1\. Register your CPT**
+Just register your CPT like you always do via:
 
 ~~~
 <?php register_post_type( 'll-company', $args );
 ~~~
 
-**2\. Add your custom class**  
+**2\. Add your custom class**
 Add a custom WordPress object class to the `wordpress-objects` directory within your current active theme via `clarkson-theme/wordpress-objects/ll-company.php`:
 
 ~~~
 class ll_company extends Clarkson_Post {
-     public function get_website(){
-         return get_post_meta( $this->get_id(), 'll-website');
-     } 
+    public function get_website(){
+        return get_post_meta( $this->get_id(), 'll-website');
+    }
 }
 ~~~
 
-When you register a Custom Post Type `ll_company` your custom class `ll_company` gets loaded in the `objects`  variable within the loop. For example: When visiting the archive of this CPT like [`archive-company.twig`](https://github.com/level-level/Clarkson-Theme/blob/master/templates/index.twig#L4-L6){:target="_blank"} then all these posts are of the class `ll_company`
+When you register a Custom Post Type `ll_company` your custom class `ll_company` gets loaded in the `objects` variable within the loop. For example: When visiting the archive of this CPT like [`archive-company.twig`](https://github.com/level-level/Clarkson-Theme/blob/master/templates/index.twig#L4-L6){:target="_blank"} then all these posts are of the class `ll_company`
 
 ## Custom Terms
 In the same way as you extend a CPT, you can register a Custom Taxonomy, create a class for it and extend the basic [Clarkson_Term](https://github.com/level-level/Clarkson-Core/blob/master/post-objects/Clarkson_Term.php){:target="_blank"} class.
