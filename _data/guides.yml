@@ -3,5 +3,8 @@
 - docname: theming
   title: Theming
 - docname: twig-templating
-  title: Twig templating- docname: videos
+  title: Twig templating
+- docname: wordpress-objects
+  title: Working with Custom Post Type, Taxonomies & Users (WordPress Objects)
+- docname: videos
   title: Videos - Talks about Clarkson
