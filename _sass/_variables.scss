@@ -149,10 +149,10 @@ $interval-size: $range / $intervals !default;
 
 /*** Collections ***/
 $collection-border-color: #e0e0e0 !default;
-$collection-bg-color: #fff !default;
-$collection-active-bg-color: #eaeaea !default;
+$collection-bg-color: #dedede !default;
+$collection-active-bg-color: #eaeaea !default; //eaeaea
 $collection-active-color: lighten($secondary-color, 55%) !default;
-$collection-hover-bg-color: #ddd !default;
+$collection-hover-bg-color: #bebebe !default;
 
 /* Progress Bar */
 $progress-bar-color: $secondary-color !default;

@@ -79,10 +79,7 @@ code {
 
 .no-border {
   border: none;
-}
-
-.collection-item {
-  &.no-border {
+  .collection-item & {
     border: none;
   }
 }
@@ -99,14 +96,9 @@ padding-top: 60px;
 }
 
 .collection.docs {
-  background: #e0e0e0;
   .collection-item {
     color: $off-black;
     font-weight: 500;
-
-    &.active {
-      background-color: #ddd;
-    }
   }
 
   .children {

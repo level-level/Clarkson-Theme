@@ -171,4 +171,4 @@ At this point the `footer` variable can be called within the footer of the site.
 
 Find out more about [Twig variables](https://twig.symfony.com/doc/2.x/templates.html#variables) on the Twig site.
 
-You are now ready to get into Twig templating!
+You are now ready to get into <a href="/guides/twig-templating.html">Twig templating</a>!
