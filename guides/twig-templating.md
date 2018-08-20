@@ -34,5 +34,12 @@ Every child template that extends `2-column.twig` can overwrite this "content" `
 
 A parent block can contain a default value if the child template doesn't overwrite that specific block.
 
+## Passing additional variables to your include statement.
+
+You can add additional variables by passing them after the `with` keyword:
+```
+{% raw %}{% include 'template.twig' with { 'foo': 'bar' } %}{% endraw %}
+```
+
 
 Check out the Twig website [about template extends and block](https://twig.symfony.com/doc/2.x/tags/extends.html) if you want to know more about this subject.

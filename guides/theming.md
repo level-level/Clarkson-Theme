@@ -22,7 +22,7 @@ Now you know where to look for all the template files ;).
 Open your project and find `themes/{clarkson-theme-light}/templates/index.twig`. Within that template look for the `objects` variable. This `objects` variable contains all the posts that on that current page. If you are on an Archive page, then all the post from The Loop are loaded into `objects`. This variable `objects` is created and made available by Clarkson Core. It's a generic name for Posts, Pages and other Custom Post Types.
 
 So if you alter the loop via [`pre_get_posts`](https://codex.wordpress.org/Plugin_API/Action_Reference/pre_get_posts) filter then the items in `objects` changes with it. Easy does it, just like WordPress!
- 
+
 ### templates/index.twig
 {: .code-label}
 ~~~twig
@@ -35,6 +35,7 @@ So if you alter the loop via [`pre_get_posts`](https://codex.wordpress.org/Plugi
 {% endblock %}{% endraw %}
 ~~~
 
+Because of the `for` loop, the variable `object` will be made available by Twig in the `partials/teaser.twig`.
 
 ## Calling WordPress functions
 
@@ -69,7 +70,7 @@ Here you can find more information about Twig and [escaping](https://twig.symfon
 Sometimes you want to call a custom PHP function which you wrote yourself or a function from a Plugin you installed. 
 In this case, we want to add a more advanced pagination and for that we always suggest [WP Pagenavi](https://nl.wordpress.org/plugins/wp-pagenavi/). So go ahead and install it.
 
-We have now installed the new WP PageNavi plugin and we want to Register the `wp_pagenavi` function so it becomes available within our Twig templates. Open up `themes/{clarkson-core-light}/functions.php` and add `wp_pagenavi` to the `$extra` Array.
+We have now installed the new WP Pagenavi plugin and we want to Register the `wp_pagenavi` function so it becomes available within our Twig templates. Open up `themes/{clarkson-core-light}/functions.php` and add `wp_pagenavi` to the `$extra` Array. This function is made available by the WP Pagenavi plugin, just like Gravity Forms has `gravity_forms()` or FacetWP has `facetwp_display( 'facet', 'my_facet' );`.
 
 ### functions.php
 {: .code-label}

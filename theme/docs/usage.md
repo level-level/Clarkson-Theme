@@ -10,6 +10,6 @@ We try to limit all the moving part as much as possible. You're not required to 
  in vanilla CSS, but at one point in your development process they come in handy. Visit one of the dedicated documentation
   pages below:
 
-- [Gulp](/theme/docs/usage-gulp.html)
 - [BrowserSync](/theme/docs/usage-browsersync.html)
+- [Gulp](/theme/docs/usage-gulp.html)
 - [NPM](/theme/docs/usage-npm.html)

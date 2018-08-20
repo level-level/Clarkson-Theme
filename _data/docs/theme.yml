@@ -4,10 +4,10 @@
   title: Installation
 - docname: usage
   title: Usage
-- docname: usage-gulp
-  title: Gulp
 - docname: usage-browsersync
   title: BrowserSync
+- docname: usage-gulp
+  title: Gulp
 - docname: usage-npm
   title: NPM
 - docname: tips
