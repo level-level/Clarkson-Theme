@@ -6,12 +6,19 @@ project: core
 ---
 # Custom objects
 
+To overwrite the default `Clarkson_Object` create `wordpress-objects/post.php` or any other internal post type like `page` or `attachment`.
+
+To overwrite the default `Clarkson_Term` create `wordpress-objects/category.php` or any other internal taxonomy like `post_tag`.
+
+To overwrite the default `Clarkson_User`  create `wordpress-objects/user.php`.
+
+
 ## Autoloader
 Clarkson Core autoloads all registered Custom Post Types, Taxonomies and Users from the `wordpress-objects` directory within your active theme. 
 
 Clarkon Core is _Child Theme_compatible. So when your have a `post.php` in both your parent theme as your child theme, then the child theme class gets loaded instead of the parent one. 🎉 
 
-You can create a Base class which the Post class Extends from, but you should load this class by manually._
+You can create a Base class which the Post class Extends from, but you should load this class by manually.
 
 ## Custom Post Types
 It's possible to extend the Clarkson Object to your own Custom Post Type by creating classes that represent the Custom Post Types.  

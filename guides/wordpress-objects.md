@@ -8,16 +8,16 @@ type: guides
 
 Clarkson Core provides a solution for working with Object Oriented Model which are autoloaded from the `/themes/{clarkson-theme-light}/wordpress-objects/` directory. Clarkson itself contains a set of PHP classes that represent the available WordPress data types:  
 
-The main [Clarkson Object](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_Object.php){:target="_blank"} class represents `WP_Post` and has the `post_type` : `post`. This class looks like `WP_Post`, but with some more handy stuff and is extendable unlike the WP_Post class.
+The main [Clarkson Object](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_Object.php){:target="_blank"} class represents `WP_Post` and has the `post_type` : `post`. This class looks like `WP_Post`, but with some more handy stuff and is extendable unlike the WP_Post class. To overwrite this class, create `wordpress-objects/post.php` or any other internal post type like `page` or `attachment`.
 
-Then there is the [Clarkson Term](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_Term.php){:target="_blank"} class which represents `WP_Term`.
+Then there is the [Clarkson Term](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_Term.php){:target="_blank"} class which represents `WP_Term`. To overwrite this class, create `wordpress-objects/category.php` or any other internal taxonomy like `post_tag`.
 
-And a [Clarkson User](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_User.php){:target="_blank"} class that represent `WP_User`.
+And a [Clarkson User](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_User.php){:target="_blank"} class that represent `WP_User`. To overwrite this class create `wordpress-objects/user.php`.
 
 
 ## Creating a Custom Post Type
 
-Let's create a CPT like you are used to do.
+Let's create a CPT like you are used to do to display some companies.
 
 functions.php
 {: .code-label}

@@ -14,7 +14,7 @@ Then there is the [Clarkson Term](https://github.com/level-level/Clarkson-Core/b
 And a [Clarkson User](https://github.com/level-level/Clarkson-Core/blob/master/wordpress-objects/Clarkson_User.php){:target="_blank"} class that represent `WP_User`.
 
 ## Implementing your own custom WordPress objects
-You can implement and overwrite all class with your own [custom objects](/core/docs/custom-objects.html)
+You can implement and overwrite all classes with your own [custom objects](/core/docs/custom-objects.html)
 
 ## Filenaming convention
 
