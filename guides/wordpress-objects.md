@@ -145,6 +145,8 @@ class category extends Clarkson_Term {
 }
 ~~~
 
+Add this to your `ct_company` WordPress Object.
+
 wordpress-objects/ct_company.php
 {: .code-label}
 ~~~php
