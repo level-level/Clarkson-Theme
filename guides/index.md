@@ -29,17 +29,3 @@ For more detailed information or alternative methodes about installing Clarkson 
 You can also use Clarkson Core in an existing theme.
 
 > Remember, we are using Clarkson Theme Light in this Guide!
-
-<!-- 
-
-To do:
-
-Pass variable to include of template
-
-Custom call to Twig / Clarkson Render
-Transform WP_Query or get_posts to Clarkson WordPress Objects
-Twig concatinate (dynamic twig include ) - https://timber.github.io/docs/guides/cookbook-twig/
-Twig template caching
-Menus
-Internationalization - https://timber.github.io/docs/guides/internationalization/
- -->
