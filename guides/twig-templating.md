@@ -8,7 +8,7 @@ type: guides
 
 The Twig template is a powerfull tool to create your theme with. In this part we will describe some basics with which you can build your custom site! Twig has a lot of functions, but you really don't need to know them all to create decent sites!
 
-## Twig: Template extends
+## Twig Template extends
 
 At this point we are ready to to create a Custom Post Type with a new template. Twig is a templating engine that helps you create re-usable  templates and smaller partials. So you Don't have to Repeat Yourself ;).
 
@@ -20,7 +20,7 @@ Do you still have `themes/{clarkson-core-light}/templates/index.twig` open right
 
 This means that `index.twig` is using `2-column.twig` as its parent template. All the surrounding HTML are located in that parent template. It contains those site-wide elementents. You can create any number of base templates to extend from but you can only have on extends tag called per rendering.
 
-## Twig blocks
+## Twig Blocks
 
 So our `layouts/2-column.twig` parent template contains this Twig `block`.
 
