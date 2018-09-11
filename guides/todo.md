@@ -13,3 +13,4 @@ type: guides
 - Internationalization - https://github.com/level-level/clarkson-wp-cli-twig-translations / https://timber.github.io/docs/guides/internationalization/
 - Clarkson Theme instead of Clarkson Theme Light
 - Default available variables provided by Clarkson Core
+- Custom template with a custom WP_Query and with possible custom navigation.
