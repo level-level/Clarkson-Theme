@@ -241,8 +241,7 @@ gulp.task('jshint', function() {
 // Force because we are deleting a file outside of our working directory
 gulp.task('clean', function(){
   var del = require('del');
-  del([path.dist], {force:true}, function (err, paths) {
-  });
+  return del([path.dist], {force:true}, function (err, paths) {});
 });
 
 // ### Watch
