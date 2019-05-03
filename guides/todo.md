@@ -6,6 +6,8 @@ type: guides
 
 # These subjects still need to be describe in the docs or guide.
 
+- Document how to render Gutenberg blocks with Clarkson
+- Document Tips to work with WooCommerce. - https://github.com/level-level/Clarkson-Core/issues/131
 - Custom call to Twig / Clarkson Render
 - Transform WP_Query or get_posts to Clarkson WordPress Objects
 - Twig concatinate (dynamic twig include ) - https://timber.github.io/docs/guides/cookbook-twig/
