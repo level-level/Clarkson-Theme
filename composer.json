@@ -2,7 +2,7 @@
     "name": "level-level/clarkson-theme",
     "type": "project",
     "license": "private",
-
+    "abandoned": true,
     "repositories": [
         {
             "type": "composer",
